@@ -1,0 +1,23 @@
+<div class={{unless @pullLeft "row"}}>
+  <div class={{unless @pullLeft "col-xl-8 offset-xl-2"}}>
+    <div
+      class="mt-4 {{unless @noCard "card"}} {{unless @leftAlign "text-center"}}"
+    >
+      <div class="{{unless @noCard "card-body"}} jumbo-message">
+        <span class="svg-icon empty-box mb-4"></span>
+        <h2>
+          {{#unless @hideBack}}
+            {{!-- <BackButton /> --}}
+          {{/unless}}
+          {{@title}}
+        </h2>
+        <p class="text-muted mb-2">
+          {{@subtitle}}
+        </p>
+        <p class="text-muted">
+          {{yield}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

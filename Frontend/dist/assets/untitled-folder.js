@@ -470,7 +470,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("untitled-folder/app")["default"].create({"name":"untitled-folder","version":"0.0.0+940161b0"});
+            require("untitled-folder/app")["default"].create({"name":"untitled-folder","version":"0.0.0+eec84e7c"});
           }
         
 //# sourceMappingURL=untitled-folder.map

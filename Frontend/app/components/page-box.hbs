@@ -1,0 +1,275 @@
+<div ...attributes class="m-b-2">
+  {{#if (or @title (has-block "title"))}}
+    <div class="header pagebox">
+      <div class="header-body border-0 pb-0">
+        <div class="row align-items-bottom">
+          <div
+            class={{if
+              @titleClasses
+              @titleClasses
+              "col-12 col-lg-6 align-self-center"
+            }}
+          >
+            <h1 class="header-title">
+              {{#unless @hideBackBtn}}
+                {{!-- <BackButton /> --}}
+              {{/unless}}
+
+              {{#if (has-block "title")}}
+                {{yield to="title"}}
+              {{else}}
+                {{@title}}
+              {{/if}}
+              {{#if @tagText}}
+                <span
+                  class={{concat "ml-1 badge " @tagClass}}
+                  style={{if @tagColor (background-color @tagColor)}}
+                >
+                  {{@tagText}}
+                </span>
+              {{/if}}
+
+              {{#if @infoBtnModalId}}
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target={{concat "#" @infoBtnModalId}}
+                >
+                  <span class="fe fe-help-circle h3"></span>
+                </a>
+              {{/if}}
+            </h1>
+
+            {{#if @largeSubtitle}}
+              <div class="text-muted large-subtitle">
+                {{@largeSubtitle}}
+                {{#if @largeSubtitleModalTrigger}}
+                  <span class="btn">
+                    <ModalTrigger
+                      @modalId={{@largeSubtitleModalTrigger}}
+                      @link={{true}}
+                      @text={{""}}
+                      @icon={{"fa-pencil"}}
+                    />
+                  </span>
+                {{/if}}
+              </div>
+            {{/if}}
+          </div>
+          <div
+            class={{if
+              @btnClasses
+              @btnClasses
+              "col-12 col-lg-6 text-right pagebox-buttons align-self-center"
+            }}
+          >
+            {{#if @btn}}
+              {{#if @btnDivWrapper}}
+                <div>
+                  <@btn />
+                </div>
+              {{else}}
+                <@btn />
+              {{/if}}
+            {{/if}}
+
+            {{#if @btn2}}
+              {{#if @btnDivWrapper}}
+                <div>
+                  <@btn2 />
+                </div>
+              {{else}}
+                <@btn2 />
+              {{/if}}
+            {{/if}}
+
+            {{#if @btn3}}
+              {{#if @btnDivWrapper}}
+                <div>
+                  <@btn3 />
+                </div>
+              {{else}}
+                <@btn3 />
+              {{/if}}
+            {{/if}}
+
+            {{#if @btn4}}
+              {{#if @btnDivWrapper}}
+                <div>
+                  <@btn4 />
+                </div>
+              {{else}}
+                <@btn4 />
+              {{/if}}
+            {{/if}}
+
+            {{! -- handle single download link -- !}}
+            {{#if (and @downloadLink (not @downloadLink2))}}
+              {{#if @downloadLink1Modal}}
+                <ModalTrigger
+                  @icon={{"fa fa-download"}}
+                  @modalId={{@downloadLink1Modal}}
+                />
+              {{else}}
+                <a
+                  class="ml-3"
+                  target="_blank"
+                  href={{download-file
+                    @downloadLink
+                    @downloadLinkParam1
+                    @downloadLinkParam2
+                  }}
+                  rel="noopener noreferrer"
+                >
+                  <span class="fa fa-download"></span>
+                </a>
+              {{/if}}
+            {{else}}
+              {{! -- handle more than 1 download links -- !}}
+              {{#if (and @downloadLink @downloadLink2)}}
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle ml-3" data-toggle="dropdown" data-offset="0,12">
+                    <span class="fa fa-download"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a
+                      class="dropdown-item"
+                      href={{if @downloadLinkRaw @downloadLink (download-file
+                        @downloadLink
+                        @downloadLinkParam1
+                        @downloadLinkParam2)
+                      }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {{@downloadText}}
+                    </a>
+
+                    {{#if @downloadLink2Modal}}
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-toggle="modal"
+                        data-target={{@downloadLink2Modal}}
+                        data-backdrop="static"
+                      >
+                        {{@downloadText2}}
+                      </a>
+                    {{else}}
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href={{if @downloadLink2Raw @downloadLink2 (download-file
+                          @downloadLink2
+                          @downloadLink2Param1
+                          @downloadLink2Param2)
+                        }}
+                        rel="noopener noreferrer"
+                      >
+                        {{@downloadText2}}
+                      </a>
+                    {{/if}}
+                    {{#if @downloadLink3Modal}}
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-toggle="modal"
+                        data-target={{@downloadLink3Modal}}
+                        data-backdrop="static"
+                        {{on "click" @thirdActionBtnAction}}
+                      >
+                        {{@downloadText3}}
+                      </a>
+                    {{/if}}
+                  </div>
+                </div>
+              {{/if}}
+            {{/if}}
+
+            {{#if @linkText}}
+              {{#if @linkId}}
+                <LinkTo
+                  @route={{@linkLocation}}
+                  @model={{@linkId}}
+                  class={{concat "btn " @linkBtn}}
+                >
+                  {{#if @linkIcon}}
+                    <span class={{concat "fa " @linkIcon}}></span>
+                  {{/if}}
+                  {{@linkText}}
+                </LinkTo>
+              {{else}}
+                <LinkTo
+                  @route={{@linkLocation}}
+                  class={{concat "btn " @linkBtn}}
+                >
+                  {{#if @linkIcon}}
+                    <span class={{concat "fa " @linkIcon}}></span>
+                  {{/if}}
+                  {{@linkText}}
+                </LinkTo>
+              {{/if}}
+            {{/if}}
+
+            {{#if @link2Text}}
+              {{#if @link2Id}}
+                <LinkTo
+                  @route={{@link2Location}}
+                  @model={{@link2Id}}
+                  class={{concat "btn " @link2Btn}}
+                >
+                  {{#if @link2Icon}}
+                    <span class={{concat "fa " @link2Icon}}></span>
+                  {{/if}}
+
+                  {{@link2Text}}
+                </LinkTo>
+              {{else}}
+                <LinkTo
+                  @route={{@link2Location}}
+                  class={{concat "btn " @link2Btn}}
+                >
+                  {{#if @link2Icon}}
+                    <span class={{concat "fa " @link2Icon}}></span>
+                  {{/if}}
+
+                  {{@link2Text}}
+                </LinkTo>
+              {{/if}}
+            {{/if}}
+          </div>
+        </div>
+
+        {{#if @subtitle}}
+          <h6 class="header-pretitle mt-2">
+            {{@subtitle}}
+          </h6>
+        {{/if}}
+
+        <@breadcrumbs />
+
+        <div class="mt-3">
+          {{#if (has-block "info")}}
+            {{yield to="info"}}
+          {{else if @infoText}}
+            <div class="alert alert-info">
+              {{@infoText}}
+            </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if @noCard}}
+    <div class={{unless @noMargin "mt-4"}}>
+      {{yield}}
+    </div>
+  {{else}}
+    <div class="card {{@cardClass}} {{unless @noTopMargin "mt-4"}} mb-0">
+      <div class="card-body {{@cardBodyClass}}">
+        {{yield}}
+      </div>
+    </div>
+  {{/if}}
+</div>
