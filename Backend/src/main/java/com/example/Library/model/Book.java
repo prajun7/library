@@ -1,9 +1,6 @@
 package com.example.Library.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 // Option + Command + A
 // https://stackoverflow.com/questions/65643300/why-are-my-classes-marked-in-red-in-intellij-idea?fbclid=IwAR0i0YmE7hpgOPUVAXPX-QExl4QTt9o_7WuQURGvOldkEPbkOSV--DXTxkY#:~:text=It%20means%20that%20the%20files,to%20the%20VCS%20if%20desired
@@ -11,7 +8,7 @@ import jakarta.persistence.Table;
 @Entity
 public class Book {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String title;
     private String author;
