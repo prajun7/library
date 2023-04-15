@@ -15,7 +15,7 @@ define("untitled-folder/tests/unit/routes/index-test", ["qunit", "untitled-folde
   (0, _qunit.module)('Unit | Route | index', function (hooks) {
     (0, _helpers.setupTest)(hooks);
     (0, _qunit.test)('it exists', function (assert) {
-      let route = this.owner.lookup('route:index');
+      var route = this.owner.lookup('route:index');
       assert.ok(route);
     });
   });
@@ -27,7 +27,7 @@ define("untitled-folder/tests/unit/routes/not-found-route-test", ["qunit", "unti
   (0, _qunit.module)('Unit | Route | not-found-route', function (hooks) {
     (0, _helpers.setupTest)(hooks);
     (0, _qunit.test)('it exists', function (assert) {
-      let route = this.owner.lookup('route:not-found-route');
+      var route = this.owner.lookup('route:not-found-route');
       assert.ok(route);
     });
   });
@@ -39,7 +39,7 @@ define("untitled-folder/tests/unit/routes/not-found-test", ["qunit", "untitled-f
   (0, _qunit.module)('Unit | Route | not-found', function (hooks) {
     (0, _helpers.setupTest)(hooks);
     (0, _qunit.test)('it exists', function (assert) {
-      let route = this.owner.lookup('route:not-found');
+      var route = this.owner.lookup('route:not-found');
       assert.ok(route);
     });
   });
