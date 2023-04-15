@@ -1,9 +1,9 @@
-<div class="ember-view">
-  {{page-title "UntitledFolder"}}
+{{!-- When we click the BookStore we are redirected to the index route, that is in the routes/index.js file --}}
 
-  {{!-- The following component displays Ember's default welcome message. --}}
-  <WelcomePage />
-  {{!-- Feel free to remove this! --}}
+<div>
+   <LinkTo @route="index"><h1 class="header">Book Store</h1></LinkTo> 
+</div>
 
-  {{outlet}}
+<div class="container">
+    {{outlet}}
 </div>

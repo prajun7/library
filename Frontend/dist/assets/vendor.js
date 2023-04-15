@@ -4,7 +4,7 @@ window.EmberENV = (function(EmberENV, extra) {
   }
 
   return EmberENV;
-})(window.EmberENV || {}, {"EXTEND_PROTOTYPES":false,"FEATURES":{},"_APPLICATION_TEMPLATE_WRAPPER":false,"_DEFAULT_ASYNC_OBSERVERS":true,"_JQUERY_INTEGRATION":false,"_TEMPLATE_ONLY_GLIMMER_COMPONENTS":true});
+})(window.EmberENV || {}, {"EXTEND_PROTOTYPES":false,"FEATURES":{},"_APPLICATION_TEMPLATE_WRAPPER":false,"_TEMPLATE_ONLY_GLIMMER_COMPONENTS":true});
 
 // used to determine if the application should be booted immediately when `app-name.js` is evaluated
 // when `runningTests` the `app-name.js` file will **not** import the applications `app/app.js` and

@@ -1,4 +1,4 @@
-import $ from "jquery";
+// import $ from "jquery";
 
 import { action } from "@ember/object";
 import Component from "@glimmer/component";
@@ -23,12 +23,12 @@ export default class ModalTrigger extends Component {
       this.args.onTrigger();
     }
 
-    setTimeout(() => {
-      if (this.args.modalId) {
-        $("#" + this.args.modalId).modal({
-          backdrop: this.args.noBackdrop ? false : "static",
-        });
-      }
-    }, 0);
+    // setTimeout(() => {
+    //   if (this.args.modalId) {
+    //     $("#" + this.args.modalId).modal({
+    //       backdrop: this.args.noBackdrop ? false : "static",
+    //     });
+    //   }
+    // }, 0);
   }
 }
