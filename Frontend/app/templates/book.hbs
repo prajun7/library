@@ -1,4 +1,12 @@
-<div >
-    {{!-- <LinkTo class="home-btn" @route="index">Home page</LinkTo> --}}
-</div>
+{{!-- When we click the Update button, it displays the book.hbs template.
+The book.hbs template is related to the book.js file in the route folder.
+When we click the update button, it calls the book.js file of the router folder and 
+returns the model. The model consists of the specific data which we can use by
+using {{this.model}} --}}
+
+{{!-- Here this tempalte is calling the BookEditor component which takes the content "Update"
+and the model. --}}
+
+{{!-- Since we are using BookEditor component to update and add book, we have the content argument. --}}
+
 <BookEditor @content={{"Update"}}  @model={{this.model}}/>

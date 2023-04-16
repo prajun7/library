@@ -38,10 +38,10 @@ export default class BookComponent extends Component {
     const paramId = this.args.model.id;
     const bookObj = {
       id: paramId,
-      title: this.args.model.title || '',
-      author: this.args.model.author || '',
-      genre: this.args.model.genre || '',
-      count: this.args.model.count || 0,
+      title: this.args.model.title,
+      author: this.args.model.author,
+      genre: this.args.model.genre,
+      count: this.args.model.count,
     };
     console.log(bookObj);
     fetch('http://localhost:9090/book/' + paramId, {
@@ -51,9 +51,6 @@ export default class BookComponent extends Component {
         'Content-Type': 'application/json',
       },
     })
-      .then((res) => {
-        console.log('Success', res);
-      })
       .catch((err) => console.log(err));
   }
 

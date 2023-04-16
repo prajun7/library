@@ -8,8 +8,6 @@ export default class Router extends EmberRouter {
 
 Router.map(function () {
   this.route("book", {path:'book/:book_id'})
-  this.route("index")
   this.route("error", { path: "*path"});
-  
 });
  

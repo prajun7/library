@@ -1,3 +1,16 @@
+/*
+Similar to index.js route, the book.js file also acts like the useEffect with
+empty array.
+
+When we go to the 
+  this.route("book", {path:'book/:book_id'})
+which is defined in router.js file, 
+Then the book.js router file kicks off and it makes the call to the backend
+and returns the data in the model.
+We can access that data form the book.hbs template file by doing 
+{{this.model}}
+**/
+
 import Route from '@ember/routing/route';
 import Book from '../models/book';
 

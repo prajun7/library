@@ -1,16 +1,13 @@
 <tr>
-    {{!-- <td><Input @value={{@book.title}} @type="text"/></td> --}}
     <td>{{@book.title}}</td>
     <td>{{@book.author}}</td>
     <td>{{@book.genre}}</td>
     <td>{{@book.count}}</td>
 
-    <td>
+    <td class="extra-columns">
         <LinkTo class="update-btn" @route="book" @model={{@book.id}} >Update</LinkTo>
-        {{!-- <button {{on "click" this.updateBook}}>Update</button> --}}
     </td>
-    <td>
+    <td class="extra-columns">
         <button class="delete-btn" {{on "click" this.deleteBook}}>Delete</button>
-    
     </td>
 </tr>
