@@ -1,5 +1,6 @@
 import Component from "@ember/component";
 import { observer } from "@ember/object";
+// import { inject as service } from "@ember/service";
 
 export default Component.extend({
   // notifications: service("notification-messages"),
@@ -24,9 +25,9 @@ export default Component.extend({
     this.menulist.save().then(() => { 
       this.$(".modal").modal("hide"); 
       // if (isNew) { 
-      //   this.notifications.success(this.i18n.t("menulists.created.success"));
+      //   this.notifications.success("menulists.created.success");
       //  } else { 
-      //   this.notifications.success(this.i18n.t("menulists.updated.success")); 
+      //   this.notifications.success("menulists.updated.success"); 
       // } 
     });
    },

@@ -194,7 +194,7 @@
                 disabled="disabled"
               >
                 <span class="fa fa-spin fa-spinner"></span>
-                "please_wait"
+                please_wait
               </button>
             {{/unless}}
           {{/if}}
@@ -204,8 +204,8 @@
   </div>
   */
   {
-    "id": "/NiN77HY",
-    "block": "[[[11,0],[17,1],[24,0,\"modal fade\"],[24,\"role\",\"dialog\"],[24,\"aria-modal\",\"true\"],[16,1,[30,0,[\"modalId\"]]],[24,\"data-keyboard\",\"false\"],[4,[38,0],[\"click\",[30,0,[\"considerCancelClick\"]]],null],[12],[1,\"\\n\"],[1,\"  \"],[10,0],[15,0,[29,[\"modal-dialog\\n      \",[52,[30,0,[\"largeModal\"]],\"modal-lg\"],\"\\n      \",[52,[30,2],[28,[37,2],[\"modal-\",[30,2]],null]]]]],[14,\"role\",\"document\"],[12],[1,\"\\n    \"],[10,0],[15,0,[29,[\"modal-content\\n        \",[52,[30,0,[\"shadow\"]],\"shadow\"],\"\\n        \",[52,[30,0,[\"isDanger\"]],\"danger-modal\"]]]],[12],[1,\"\\n\"],[41,[51,[30,3]],[[[1,\"        \"],[10,0],[14,0,\"modal-header\"],[12],[1,\"\\n          \"],[10,1],[15,0,[29,[\"modal-title \",[52,[30,0,[\"draggableModal\"]],\"hover-pointer\"]]]],[12],[1,\"\\n\"],[41,[30,0,[\"draggableModal\"]],[[[1,\"              \"],[10,1],[14,0,\"fe fe-move\"],[12],[13],[1,\"\\n\"]],[]],null],[1,\"            \"],[1,[30,0,[\"title\"]]],[1,\"\\n          \"],[13],[1,\"\\n          \"],[10,1],[14,0,\"svg-icon times\"],[12],[13],[1,\"\\n          \"],[11,\"button\"],[24,0,\"close\"],[24,\"data-dismiss\",\"modal\"],[24,\"aria-label\",\"Close\"],[16,\"disabled\",[30,0,[\"disableModalClose\"]]],[24,4,\"button\"],[4,[38,4],[[30,0],\"cancelClick\"],null],[12],[1,\"\\n            \"],[10,1],[14,\"aria-hidden\",\"true\"],[12],[1,\"\\n              ×\\n            \"],[13],[1,\"\\n          \"],[13],[1,\"\\n        \"],[13],[1,\"\\n\"]],[]],null],[1,\"      \"],[10,0],[14,0,\"modal-body\"],[12],[1,\"\\n\"],[41,[30,0,[\"visible\"]],[[[1,\"          \"],[18,4,null],[1,\"\\n\"]],[]],null],[1,\"      \"],[13],[1,\"\\n      \"],[10,0],[15,0,[29,[\"modal-footer \",[52,[30,0,[\"isDanger\"]],\"text-center\"]]]],[12],[1,\"\\n\"],[41,[48,[30,5]],[[[1,\"          \"],[18,5,null],[1,\"\\n\"]],[]],null],[41,[48,[30,6]],[[[1,\"          \"],[18,6,null],[1,\"\\n\"]],[]],[[[41,[51,[30,0,[\"noBackBtn\"]]],[[[1,\"            \"],[11,\"button\"],[24,0,\"btn btn-outline-secondary\"],[24,\"data-dismiss\",\"modal\"],[16,\"disabled\",[28,[37,7],[[30,0,[\"disableModalClose\"]],[30,0,[\"btnLoading\"]]],null]],[24,4,\"button\"],[4,[38,0],[\"click\",[28,[37,4],[[30,0],\"cancelClick\"],null]],null],[12],[1,\"\\n              \"],[1,[52,[30,0,[\"cancelTextOverride\"]],[30,0,[\"cancelTextOverride\"]],[28,[37,8],[\"back\"],null]]],[1,\"\\n            \"],[13],[1,\"\\n\"]],[]],null]],[]]],[41,[48,[30,7]],[[[1,\"          \"],[18,7,null],[1,\"\\n\"]],[]],[[[41,[30,0,[\"btnText\"]],[[[41,[51,[28,[37,7],[[30,0,[\"btnLoading\"]],[30,0,[\"imageUploadInProgress\"]]],null]],[[[1,\"              \"],[11,\"button\"],[16,0,[28,[37,2],[\"btn \",[30,0,[\"btn\"]]],null]],[24,4,\"button\"],[4,[38,4],[[30,0],\"btnClick\"],null],[12],[1,\"\\n                \"],[10,1],[15,0,[28,[37,2],[\"fa \",[30,0,[\"icon\"]]],null]],[12],[13],[1,\"\\n                \"],[1,[30,0,[\"btnText\"]]],[1,\"\\n              \"],[13],[1,\"\\n\"]],[]],[[[1,\"              \"],[10,\"button\"],[15,0,[28,[37,2],[\"btn \",[30,0,[\"btn\"]]],null]],[14,\"disabled\",\"disabled\"],[14,4,\"button\"],[12],[1,\"\\n                \"],[10,1],[14,0,\"fa fa-spin fa-spinner\"],[12],[13],[1,\"\\n                please_wait\\n              \"],[13],[1,\"\\n\"]],[]]]],[]],null]],[]]],[1,\"\\n\"],[41,[30,0,[\"btn2Text\"]],[[[41,[51,[28,[37,7],[[30,0,[\"btn2Loading\"]],[30,0,[\"imageUploadInProgress\"]]],null]],[[[1,\"            \"],[11,\"button\"],[16,0,[28,[37,2],[\"btn \",[30,0,[\"btn2\"]]],null]],[24,4,\"button\"],[4,[38,4],[[30,0],\"btn2Click\"],null],[12],[1,\"\\n              \"],[10,1],[15,0,[28,[37,2],[\"fa \",[30,0,[\"icon2\"]]],null]],[12],[13],[1,\"\\n              \"],[1,[30,0,[\"btn2Text\"]]],[1,\"\\n            \"],[13],[1,\"\\n\"]],[]],[[[1,\"            \"],[10,\"button\"],[15,0,[28,[37,2],[\"btn \",[30,0,[\"btn2\"]]],null]],[14,\"disabled\",\"disabled\"],[14,4,\"button\"],[12],[1,\"\\n              \"],[10,1],[14,0,\"fa fa-spin fa-spinner\"],[12],[13],[1,\"\\n              \\\"please_wait\\\"\\n            \"],[13],[1,\"\\n\"]],[]]]],[]],null],[1,\"      \"],[13],[1,\"\\n    \"],[13],[1,\"\\n  \"],[13],[1,\"\\n\"],[13]],[\"&attrs\",\"@modalSize\",\"@hideHeader\",\"&default\",\"&delete-button\",\"&cancel-button\",\"&primary-button\"],false,[\"on\",\"if\",\"concat\",\"unless\",\"action\",\"yield\",\"has-block\",\"or\",\"t\"]]",
+    "id": "6+AcbcV3",
+    "block": "[[[11,0],[17,1],[24,0,\"modal fade\"],[24,\"role\",\"dialog\"],[24,\"aria-modal\",\"true\"],[16,1,[30,0,[\"modalId\"]]],[24,\"data-keyboard\",\"false\"],[4,[38,0],[\"click\",[30,0,[\"considerCancelClick\"]]],null],[12],[1,\"\\n\"],[1,\"  \"],[10,0],[15,0,[29,[\"modal-dialog\\n      \",[52,[30,0,[\"largeModal\"]],\"modal-lg\"],\"\\n      \",[52,[30,2],[28,[37,2],[\"modal-\",[30,2]],null]]]]],[14,\"role\",\"document\"],[12],[1,\"\\n    \"],[10,0],[15,0,[29,[\"modal-content\\n        \",[52,[30,0,[\"shadow\"]],\"shadow\"],\"\\n        \",[52,[30,0,[\"isDanger\"]],\"danger-modal\"]]]],[12],[1,\"\\n\"],[41,[51,[30,3]],[[[1,\"        \"],[10,0],[14,0,\"modal-header\"],[12],[1,\"\\n          \"],[10,1],[15,0,[29,[\"modal-title \",[52,[30,0,[\"draggableModal\"]],\"hover-pointer\"]]]],[12],[1,\"\\n\"],[41,[30,0,[\"draggableModal\"]],[[[1,\"              \"],[10,1],[14,0,\"fe fe-move\"],[12],[13],[1,\"\\n\"]],[]],null],[1,\"            \"],[1,[30,0,[\"title\"]]],[1,\"\\n          \"],[13],[1,\"\\n          \"],[10,1],[14,0,\"svg-icon times\"],[12],[13],[1,\"\\n          \"],[11,\"button\"],[24,0,\"close\"],[24,\"data-dismiss\",\"modal\"],[24,\"aria-label\",\"Close\"],[16,\"disabled\",[30,0,[\"disableModalClose\"]]],[24,4,\"button\"],[4,[38,4],[[30,0],\"cancelClick\"],null],[12],[1,\"\\n            \"],[10,1],[14,\"aria-hidden\",\"true\"],[12],[1,\"\\n              ×\\n            \"],[13],[1,\"\\n          \"],[13],[1,\"\\n        \"],[13],[1,\"\\n\"]],[]],null],[1,\"      \"],[10,0],[14,0,\"modal-body\"],[12],[1,\"\\n\"],[41,[30,0,[\"visible\"]],[[[1,\"          \"],[18,4,null],[1,\"\\n\"]],[]],null],[1,\"      \"],[13],[1,\"\\n      \"],[10,0],[15,0,[29,[\"modal-footer \",[52,[30,0,[\"isDanger\"]],\"text-center\"]]]],[12],[1,\"\\n\"],[41,[48,[30,5]],[[[1,\"          \"],[18,5,null],[1,\"\\n\"]],[]],null],[41,[48,[30,6]],[[[1,\"          \"],[18,6,null],[1,\"\\n\"]],[]],[[[41,[51,[30,0,[\"noBackBtn\"]]],[[[1,\"            \"],[11,\"button\"],[24,0,\"btn btn-outline-secondary\"],[24,\"data-dismiss\",\"modal\"],[16,\"disabled\",[28,[37,7],[[30,0,[\"disableModalClose\"]],[30,0,[\"btnLoading\"]]],null]],[24,4,\"button\"],[4,[38,0],[\"click\",[28,[37,4],[[30,0],\"cancelClick\"],null]],null],[12],[1,\"\\n              \"],[1,[52,[30,0,[\"cancelTextOverride\"]],[30,0,[\"cancelTextOverride\"]],[28,[37,8],[\"back\"],null]]],[1,\"\\n            \"],[13],[1,\"\\n\"]],[]],null]],[]]],[41,[48,[30,7]],[[[1,\"          \"],[18,7,null],[1,\"\\n\"]],[]],[[[41,[30,0,[\"btnText\"]],[[[41,[51,[28,[37,7],[[30,0,[\"btnLoading\"]],[30,0,[\"imageUploadInProgress\"]]],null]],[[[1,\"              \"],[11,\"button\"],[16,0,[28,[37,2],[\"btn \",[30,0,[\"btn\"]]],null]],[24,4,\"button\"],[4,[38,4],[[30,0],\"btnClick\"],null],[12],[1,\"\\n                \"],[10,1],[15,0,[28,[37,2],[\"fa \",[30,0,[\"icon\"]]],null]],[12],[13],[1,\"\\n                \"],[1,[30,0,[\"btnText\"]]],[1,\"\\n              \"],[13],[1,\"\\n\"]],[]],[[[1,\"              \"],[10,\"button\"],[15,0,[28,[37,2],[\"btn \",[30,0,[\"btn\"]]],null]],[14,\"disabled\",\"disabled\"],[14,4,\"button\"],[12],[1,\"\\n                \"],[10,1],[14,0,\"fa fa-spin fa-spinner\"],[12],[13],[1,\"\\n                please_wait\\n              \"],[13],[1,\"\\n\"]],[]]]],[]],null]],[]]],[1,\"\\n\"],[41,[30,0,[\"btn2Text\"]],[[[41,[51,[28,[37,7],[[30,0,[\"btn2Loading\"]],[30,0,[\"imageUploadInProgress\"]]],null]],[[[1,\"            \"],[11,\"button\"],[16,0,[28,[37,2],[\"btn \",[30,0,[\"btn2\"]]],null]],[24,4,\"button\"],[4,[38,4],[[30,0],\"btn2Click\"],null],[12],[1,\"\\n              \"],[10,1],[15,0,[28,[37,2],[\"fa \",[30,0,[\"icon2\"]]],null]],[12],[13],[1,\"\\n              \"],[1,[30,0,[\"btn2Text\"]]],[1,\"\\n            \"],[13],[1,\"\\n\"]],[]],[[[1,\"            \"],[10,\"button\"],[15,0,[28,[37,2],[\"btn \",[30,0,[\"btn2\"]]],null]],[14,\"disabled\",\"disabled\"],[14,4,\"button\"],[12],[1,\"\\n              \"],[10,1],[14,0,\"fa fa-spin fa-spinner\"],[12],[13],[1,\"\\n              please_wait\\n            \"],[13],[1,\"\\n\"]],[]]]],[]],null],[1,\"      \"],[13],[1,\"\\n    \"],[13],[1,\"\\n  \"],[13],[1,\"\\n\"],[13]],[\"&attrs\",\"@modalSize\",\"@hideHeader\",\"&default\",\"&delete-button\",\"&cancel-button\",\"&primary-button\"],false,[\"on\",\"if\",\"concat\",\"unless\",\"action\",\"yield\",\"has-block\",\"or\",\"t\"]]",
     "moduleName": "untitled-folder/components/bs-modal.hbs",
     "isStrictMode": false
   });
@@ -424,6 +424,7 @@
     "moduleName": "untitled-folder/components/menulist-modal.hbs",
     "isStrictMode": false
   });
+  // import { inject as service } from "@ember/service";
   var _default = (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, _component.default.extend({
     // notifications: service("notification-messages"),
     // i18n: service(), 
@@ -442,9 +443,9 @@
         this.menulist.save().then(function () {
           _this.$(".modal").modal("hide");
           // if (isNew) { 
-          //   this.notifications.success(this.i18n.t("menulists.created.success"));
+          //   this.notifications.success("menulists.created.success");
           //  } else { 
-          //   this.notifications.success(this.i18n.t("menulists.updated.success")); 
+          //   this.notifications.success("menulists.updated.success"); 
           // } 
         });
       },
@@ -1559,6 +1560,84 @@ define("untitled-folder/routes/not-found", ["exports", "@ember/routing/route"], 
     }
   });
   0; //eaimeta@70e063a35619d71f0,"ember-page-title/services/page-title"eaimeta@70e063a35619d71f
+});
+;function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+define("untitled-folder/services/runloop", ["exports", "@ember/runloop", "@ember/service"], function (_exports, _runloop, _service) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  0; //eaimeta@70e063a35619d71f0,"@ember/runloop",0,"@ember/service"eaimeta@70e063a35619d71f
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+  function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+  function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+  function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+  function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+  function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+  function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+  function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+  function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+  function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+  function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); } // eslint-disable-next-line no-restricted-imports
+  var RunloopService = /*#__PURE__*/function (_Service) {
+    _inherits(RunloopService, _Service);
+    var _super = _createSuper(RunloopService);
+    function RunloopService() {
+      _classCallCheck(this, RunloopService);
+      return _super.apply(this, arguments);
+    }
+    _createClass(RunloopService, [{
+      key: "later",
+      value: function later() {
+        return _runloop.later.apply(void 0, arguments);
+      }
+    }, {
+      key: "next",
+      value: function next() {
+        return _runloop.next.apply(void 0, arguments);
+      }
+    }, {
+      key: "cancel",
+      value: function cancel(arg) {
+        return (0, _runloop.cancel)(arg);
+      }
+    }, {
+      key: "debounce",
+      value: function debounce() {
+        return _runloop.debounce.apply(void 0, arguments);
+      }
+    }, {
+      key: "schedule",
+      value: function schedule() {
+        return _runloop.schedule.apply(void 0, arguments);
+      }
+    }, {
+      key: "join",
+      value: function join() {
+        return _runloop.join.apply(void 0, arguments);
+      }
+    }, {
+      key: "bind",
+      value: function bind() {
+        return _runloop.bind.apply(void 0, arguments);
+      }
+    }, {
+      key: "throttle",
+      value: function throttle() {
+        return _runloop.throttle.apply(void 0, arguments);
+      }
+    }, {
+      key: "scheduleOnce",
+      value: function scheduleOnce() {
+        return _runloop.scheduleOnce.apply(void 0, arguments);
+      }
+    }]);
+    return RunloopService;
+  }(_service.default);
+  _exports.default = RunloopService;
 });
 ;function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 define("untitled-folder/services/sort-table-service", ["exports", "@ember/service", "@glimmer/tracking", "untitled-folder/services/local-storage"], function (_exports, _service, _tracking, _localStorage) {
