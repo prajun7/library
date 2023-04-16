@@ -63,7 +63,7 @@
               disabled={{or this.disableModalClose this.btnLoading}}
               {{on "click" (action "cancelClick")}}
             >
-              {{if this.cancelTextOverride this.cancelTextOverride (t "back")}}
+              {{if this.cancelTextOverride this.cancelTextOverride "back"}}
             </button>
           {{/unless}}
         {{/if}}
