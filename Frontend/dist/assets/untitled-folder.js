@@ -1355,7 +1355,7 @@ define("untitled-folder/components/-dynamic-element", ["exports", "@glimmer/comp
   _exports.default = _default;
 });
 ;function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-define("untitled-folder/components/modal-trigger", ["exports", "@ember/component", "@ember/template-factory", "@ember/object", "@glimmer/component", "@glimmer/tracking"], function (_exports, _component, _templateFactory, _object, _component2, _tracking) {
+define("untitled-folder/components/modal-trigger", ["exports", "@ember/component", "@ember/template-factory", "jquery", "@ember/object", "@glimmer/component", "@glimmer/tracking"], function (_exports, _component, _templateFactory, _jquery, _object, _component2, _tracking) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -1363,7 +1363,7 @@ define("untitled-folder/components/modal-trigger", ["exports", "@ember/component
   });
   _exports.default = void 0;
   var _class;
-  0; //eaimeta@70e063a35619d71f0,"ember-cli-htmlbars",0,"@ember/object",0,"@glimmer/component",0,"@glimmer/tracking"eaimeta@70e063a35619d71f
+  0; //eaimeta@70e063a35619d71f0,"ember-cli-htmlbars",0,"jquery",0,"@ember/object",0,"@glimmer/component",0,"@glimmer/tracking"eaimeta@70e063a35619d71f
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
   function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
   function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
@@ -1485,7 +1485,6 @@ define("untitled-folder/components/modal-trigger", ["exports", "@ember/component
     "moduleName": "untitled-folder/components/modal-trigger.hbs",
     "isStrictMode": false
   });
-  // import $ from "jquery";
   var ModalTrigger = (_class = /*#__PURE__*/function (_Component) {
     _inherits(ModalTrigger, _Component);
     var _super = _createSuper(ModalTrigger);
@@ -1494,37 +1493,39 @@ define("untitled-folder/components/modal-trigger", ["exports", "@ember/component
       return _super.apply(this, arguments);
     }
     _createClass(ModalTrigger, [{
-      key: "bubble",
-      get: function get() {
-        var _this$args$bubbles;
-        return (_this$args$bubbles = this.args.bubbles) !== null && _this$args$bubbles !== void 0 ? _this$args$bubbles : true;
-      }
-    }, {
-      key: "linkClass",
-      get: function get() {
-        if (this.args.icon === "fa-trash") {
-          return "text-danger";
-        }
-        return this.args.linkClass;
-      }
-    }, {
       key: "triggerModal",
-      value: function triggerModal() {
-        if (this.args.onTrigger) {
-          this.args.onTrigger();
-        }
+      value:
+      // @cached
+      // get bubble() {
+      //   return this.args.bubbles ?? true;
+      // }
 
-        // setTimeout(() => {
-        //   if (this.args.modalId) {
-        //     $("#" + this.args.modalId).modal({
-        //       backdrop: this.args.noBackdrop ? false : "static",
-        //     });
-        //   }
-        // }, 0);
+      // @cached 
+      // get linkClass() {
+      //   if (this.args.icon === "fa-trash") {
+      //     return "text-danger";
+      //   }
+      //   return this.args.linkClass;
+      // }
+
+      function triggerModal() {
+        var _this = this;
+        // if (this.args.onTrigger) {
+        //   this.args.onTrigger();
+        // }
+
+        setTimeout(function () {
+          console.log(_this.args.modalId);
+          if (_this.args.modalId) {
+            (0, _jquery.default)("#" + _this.args.modalId).modal({
+              backdrop: _this.args.noBackdrop ? false : "static"
+            });
+          }
+        }, 0);
       }
     }]);
     return ModalTrigger;
-  }(_component2.default), (_applyDecoratedDescriptor(_class.prototype, "bubble", [_tracking.cached], Object.getOwnPropertyDescriptor(_class.prototype, "bubble"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "linkClass", [_tracking.cached], Object.getOwnPropertyDescriptor(_class.prototype, "linkClass"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "triggerModal", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "triggerModal"), _class.prototype)), _class);
+  }(_component2.default), (_applyDecoratedDescriptor(_class.prototype, "triggerModal", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "triggerModal"), _class.prototype)), _class);
   _exports.default = ModalTrigger;
   (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, ModalTrigger);
 });
@@ -2021,7 +2022,7 @@ define("untitled-folder/controllers/index", ["exports", "@ember/controller", "@e
   });
   _exports.default = void 0;
   var _dec, _class;
-  0; //eaimeta@70e063a35619d71f0,"@ember/controller",0,"@ember/object"eaimeta@70e063a35619d71f
+  0; //eaimeta@70e063a35619d71f0,"@ember/controller",0,"@ember/object",0,"@ember/object"eaimeta@70e063a35619d71f
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
   function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
   function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
@@ -2058,7 +2059,7 @@ define("untitled-folder/controllers/index", ["exports", "@ember/controller", "@e
       }
     }]);
     return IndexController;
-  }(_controller.default), (_applyDecoratedDescriptor(_class.prototype, "numberOfBooks", [_dec], Object.getOwnPropertyDescriptor(_class.prototype, "numberOfBooks"), _class.prototype)), _class));
+  }(_controller.default), (_applyDecoratedDescriptor(_class.prototype, "numberOfBooks", [_dec], Object.getOwnPropertyDescriptor(_class.prototype, "numberOfBooks"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "logNumberOfBooks", [_object.action], Object.getOwnPropertyDescriptor(_class.prototype, "logNumberOfBooks"), _class.prototype)), _class));
   _exports.default = IndexController;
 });
 ;define("untitled-folder/data-adapter", ["exports", "@ember-data/debug"], function (_exports, _debug) {
@@ -3436,7 +3437,6 @@ define("untitled-folder/services/sort-table-service", ["exports", "@ember/servic
   /*
       <PageBox>
       <StickyTable @tableClass="table-striped table-hover">
-        <thead>
           <th>
             id
           </th>
@@ -3452,10 +3452,12 @@ define("untitled-folder/services/sort-table-service", ["exports", "@ember/servic
           <th>
             count
           </th>
-        </thead>
         <tbody>
           {{#each this.model as |book|}}
             <tr>
+              {{!-- <td>
+                 <LinkTo @route="index"><h1 class="header">Book Store</h1></LinkTo> 
+              </td> --}}
               <td>{{book.id}}</td>
               <td>{{book.title}}</td>
               <td>{{book.author}}</td>
@@ -3468,15 +3470,15 @@ define("untitled-folder/services/sort-table-service", ["exports", "@ember/servic
     </PageBox>
   
   <div>
-    Number of books: {{numberOfBooks}}
-    <button {{action "logNumberOfBooks"}}>Log number of books</button>
+    Number of books: {{this.numberOfBooks}}
+    <button {{on "click" this.logNumberOfBooks}}>Log number of books</button>
   </div>
   
   
   */
   {
-    "id": "cJ7uNu4m",
-    "block": "[[[1,\"  \"],[8,[39,0],null,null,[[\"default\"],[[[[1,\"\\n    \"],[8,[39,1],null,[[\"@tableClass\"],[\"table-striped table-hover\"]],[[\"default\"],[[[[1,\"\\n      \"],[10,\"thead\"],[12],[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          id\\n        \"],[13],[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          title\\n        \"],[13],[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          author\\n        \"],[13],[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          genre\\n        \"],[13],[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          count\\n        \"],[13],[1,\"\\n      \"],[13],[1,\"\\n      \"],[10,\"tbody\"],[12],[1,\"\\n\"],[42,[28,[37,3],[[28,[37,3],[[30,0,[\"model\"]]],null]],null],null,[[[1,\"          \"],[10,\"tr\"],[12],[1,\"\\n            \"],[10,\"td\"],[12],[1,[30,1,[\"id\"]]],[13],[1,\"\\n            \"],[10,\"td\"],[12],[1,[30,1,[\"title\"]]],[13],[1,\"\\n            \"],[10,\"td\"],[12],[1,[30,1,[\"author\"]]],[13],[1,\"\\n            \"],[10,\"td\"],[12],[1,[30,1,[\"genre\"]]],[13],[1,\"\\n            \"],[10,\"td\"],[12],[1,[30,1,[\"count\"]]],[13],[1,\"\\n          \"],[13],[1,\"\\n\"]],[1]],null],[1,\"      \"],[13],[1,\"\\n    \"]],[]]]]],[1,\"\\n  \"]],[]]]]],[1,\"\\n\\n\"],[10,0],[12],[1,\"\\n  Number of books: \"],[1,[34,4]],[1,\"\\n  \"],[11,\"button\"],[4,[38,5],[[30,0],\"logNumberOfBooks\"],null],[12],[1,\"Log number of books\"],[13],[1,\"\\n\"],[13],[1,\"\\n\\n\"]],[\"book\"],false,[\"page-box\",\"sticky-table\",\"each\",\"-track-array\",\"numberOfBooks\",\"action\"]]",
+    "id": "LZwvsrNT",
+    "block": "[[[1,\"  \"],[8,[39,0],null,null,[[\"default\"],[[[[1,\"\\n    \"],[8,[39,1],null,[[\"@tableClass\"],[\"table-striped table-hover\"]],[[\"default\"],[[[[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          id\\n        \"],[13],[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          title\\n        \"],[13],[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          author\\n        \"],[13],[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          genre\\n        \"],[13],[1,\"\\n        \"],[10,\"th\"],[12],[1,\"\\n          count\\n        \"],[13],[1,\"\\n      \"],[10,\"tbody\"],[12],[1,\"\\n\"],[42,[28,[37,3],[[28,[37,3],[[30,0,[\"model\"]]],null]],null],null,[[[1,\"          \"],[10,\"tr\"],[12],[1,\"\\n\"],[1,\"            \"],[10,\"td\"],[12],[1,[30,1,[\"id\"]]],[13],[1,\"\\n            \"],[10,\"td\"],[12],[1,[30,1,[\"title\"]]],[13],[1,\"\\n            \"],[10,\"td\"],[12],[1,[30,1,[\"author\"]]],[13],[1,\"\\n            \"],[10,\"td\"],[12],[1,[30,1,[\"genre\"]]],[13],[1,\"\\n            \"],[10,\"td\"],[12],[1,[30,1,[\"count\"]]],[13],[1,\"\\n          \"],[13],[1,\"\\n\"]],[1]],null],[1,\"      \"],[13],[1,\"\\n    \"]],[]]]]],[1,\"\\n  \"]],[]]]]],[1,\"\\n\\n\"],[10,0],[12],[1,\"\\n  Number of books: \"],[1,[30,0,[\"numberOfBooks\"]]],[1,\"\\n  \"],[11,\"button\"],[4,[38,4],[\"click\",[30,0,[\"logNumberOfBooks\"]]],null],[12],[1,\"Log number of books\"],[13],[1,\"\\n\"],[13],[1,\"\\n\\n\"]],[\"book\"],false,[\"page-box\",\"sticky-table\",\"each\",\"-track-array\",\"on\"]]",
     "moduleName": "untitled-folder/templates/index.hbs",
     "isStrictMode": false
   });

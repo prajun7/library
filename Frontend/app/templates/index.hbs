@@ -1,6 +1,5 @@
   <PageBox>
     <StickyTable @tableClass="table-striped table-hover">
-      <thead>
         <th>
           id
         </th>
@@ -16,10 +15,12 @@
         <th>
           count
         </th>
-      </thead>
       <tbody>
         {{#each this.model as |book|}}
           <tr>
+            {{!-- <td>
+               <LinkTo @route="index"><h1 class="header">Book Store</h1></LinkTo> 
+            </td> --}}
             <td>{{book.id}}</td>
             <td>{{book.title}}</td>
             <td>{{book.author}}</td>
@@ -32,7 +33,7 @@
   </PageBox>
 
 <div>
-  Number of books: {{numberOfBooks}}
-  <button {{action "logNumberOfBooks"}}>Log number of books</button>
+  Number of books: {{this.numberOfBooks}}
+  <button {{on "click" this.logNumberOfBooks}}>Log number of books</button>
 </div>
 
