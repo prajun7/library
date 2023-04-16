@@ -10,7 +10,5 @@ module.exports = function (defaults) {
     }
   });
 
-  app.import("vendor/bootstrap.min.js");
-
   return app.toTree();
 };
