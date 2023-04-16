@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'untitled-folder',
+    modulePrefix: 'bookstore',
     environment,
     rootURL: '/',
     locationType: 'history',

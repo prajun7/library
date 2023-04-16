@@ -1,5 +1,5 @@
-import Application from 'untitled-folder/app';
-import config from 'untitled-folder/config/environment';
+import Application from 'bookstore/app';
+import config from 'bookstore/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

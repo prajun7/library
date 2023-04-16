@@ -1,5 +1,5 @@
 import EmberRouter from '@ember/routing/router';
-import config from 'untitled-folder/config/environment';
+import config from 'bookstore/config/environment';
 
 export default class Router extends EmberRouter {
   location = config.locationType;
@@ -7,5 +7,9 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('not-found', { path: '/*path' });
+  this.route("book", {path:'book/:book_id'})
+  this.route("index")
+  this.route("error", { path: "*path"});
+  
 });
+ 
