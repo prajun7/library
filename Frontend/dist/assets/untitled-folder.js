@@ -171,7 +171,7 @@
                   disabled="disabled"
                 >
                   <span class="fa fa-spin fa-spinner"></span>
-                  {{t "please_wait"}}
+                  please_wait
                 </button>
               {{/unless}}
             {{/if}}
@@ -194,7 +194,7 @@
                 disabled="disabled"
               >
                 <span class="fa fa-spin fa-spinner"></span>
-                {{t "please_wait"}}
+                "please_wait"
               </button>
             {{/unless}}
           {{/if}}
@@ -204,8 +204,8 @@
   </div>
   */
   {
-    "id": "GOMSEF9J",
-    "block": "[[[11,0],[17,1],[24,0,\"modal fade\"],[24,\"role\",\"dialog\"],[24,\"aria-modal\",\"true\"],[16,1,[30,0,[\"modalId\"]]],[24,\"data-keyboard\",\"false\"],[4,[38,0],[\"click\",[30,0,[\"considerCancelClick\"]]],null],[12],[1,\"\\n\"],[1,\"  \"],[10,0],[15,0,[29,[\"modal-dialog\\n      \",[52,[30,0,[\"largeModal\"]],\"modal-lg\"],\"\\n      \",[52,[30,2],[28,[37,2],[\"modal-\",[30,2]],null]]]]],[14,\"role\",\"document\"],[12],[1,\"\\n    \"],[10,0],[15,0,[29,[\"modal-content\\n        \",[52,[30,0,[\"shadow\"]],\"shadow\"],\"\\n        \",[52,[30,0,[\"isDanger\"]],\"danger-modal\"]]]],[12],[1,\"\\n\"],[41,[51,[30,3]],[[[1,\"        \"],[10,0],[14,0,\"modal-header\"],[12],[1,\"\\n          \"],[10,1],[15,0,[29,[\"modal-title \",[52,[30,0,[\"draggableModal\"]],\"hover-pointer\"]]]],[12],[1,\"\\n\"],[41,[30,0,[\"draggableModal\"]],[[[1,\"              \"],[10,1],[14,0,\"fe fe-move\"],[12],[13],[1,\"\\n\"]],[]],null],[1,\"            \"],[1,[30,0,[\"title\"]]],[1,\"\\n          \"],[13],[1,\"\\n          \"],[10,1],[14,0,\"svg-icon times\"],[12],[13],[1,\"\\n          \"],[11,\"button\"],[24,0,\"close\"],[24,\"data-dismiss\",\"modal\"],[24,\"aria-label\",\"Close\"],[16,\"disabled\",[30,0,[\"disableModalClose\"]]],[24,4,\"button\"],[4,[38,4],[[30,0],\"cancelClick\"],null],[12],[1,\"\\n            \"],[10,1],[14,\"aria-hidden\",\"true\"],[12],[1,\"\\n              ×\\n            \"],[13],[1,\"\\n          \"],[13],[1,\"\\n        \"],[13],[1,\"\\n\"]],[]],null],[1,\"      \"],[10,0],[14,0,\"modal-body\"],[12],[1,\"\\n\"],[41,[30,0,[\"visible\"]],[[[1,\"          \"],[18,4,null],[1,\"\\n\"]],[]],null],[1,\"      \"],[13],[1,\"\\n      \"],[10,0],[15,0,[29,[\"modal-footer \",[52,[30,0,[\"isDanger\"]],\"text-center\"]]]],[12],[1,\"\\n\"],[41,[48,[30,5]],[[[1,\"          \"],[18,5,null],[1,\"\\n\"]],[]],null],[41,[48,[30,6]],[[[1,\"          \"],[18,6,null],[1,\"\\n\"]],[]],[[[41,[51,[30,0,[\"noBackBtn\"]]],[[[1,\"            \"],[11,\"button\"],[24,0,\"btn btn-outline-secondary\"],[24,\"data-dismiss\",\"modal\"],[16,\"disabled\",[28,[37,7],[[30,0,[\"disableModalClose\"]],[30,0,[\"btnLoading\"]]],null]],[24,4,\"button\"],[4,[38,0],[\"click\",[28,[37,4],[[30,0],\"cancelClick\"],null]],null],[12],[1,\"\\n              \"],[1,[52,[30,0,[\"cancelTextOverride\"]],[30,0,[\"cancelTextOverride\"]],[28,[37,8],[\"back\"],null]]],[1,\"\\n            \"],[13],[1,\"\\n\"]],[]],null]],[]]],[41,[48,[30,7]],[[[1,\"          \"],[18,7,null],[1,\"\\n\"]],[]],[[[41,[30,0,[\"btnText\"]],[[[41,[51,[28,[37,7],[[30,0,[\"btnLoading\"]],[30,0,[\"imageUploadInProgress\"]]],null]],[[[1,\"              \"],[11,\"button\"],[16,0,[28,[37,2],[\"btn \",[30,0,[\"btn\"]]],null]],[24,4,\"button\"],[4,[38,4],[[30,0],\"btnClick\"],null],[12],[1,\"\\n                \"],[10,1],[15,0,[28,[37,2],[\"fa \",[30,0,[\"icon\"]]],null]],[12],[13],[1,\"\\n                \"],[1,[30,0,[\"btnText\"]]],[1,\"\\n              \"],[13],[1,\"\\n\"]],[]],[[[1,\"              \"],[10,\"button\"],[15,0,[28,[37,2],[\"btn \",[30,0,[\"btn\"]]],null]],[14,\"disabled\",\"disabled\"],[14,4,\"button\"],[12],[1,\"\\n                \"],[10,1],[14,0,\"fa fa-spin fa-spinner\"],[12],[13],[1,\"\\n                \"],[1,[28,[35,8],[\"please_wait\"],null]],[1,\"\\n              \"],[13],[1,\"\\n\"]],[]]]],[]],null]],[]]],[1,\"\\n\"],[41,[30,0,[\"btn2Text\"]],[[[41,[51,[28,[37,7],[[30,0,[\"btn2Loading\"]],[30,0,[\"imageUploadInProgress\"]]],null]],[[[1,\"            \"],[11,\"button\"],[16,0,[28,[37,2],[\"btn \",[30,0,[\"btn2\"]]],null]],[24,4,\"button\"],[4,[38,4],[[30,0],\"btn2Click\"],null],[12],[1,\"\\n              \"],[10,1],[15,0,[28,[37,2],[\"fa \",[30,0,[\"icon2\"]]],null]],[12],[13],[1,\"\\n              \"],[1,[30,0,[\"btn2Text\"]]],[1,\"\\n            \"],[13],[1,\"\\n\"]],[]],[[[1,\"            \"],[10,\"button\"],[15,0,[28,[37,2],[\"btn \",[30,0,[\"btn2\"]]],null]],[14,\"disabled\",\"disabled\"],[14,4,\"button\"],[12],[1,\"\\n              \"],[10,1],[14,0,\"fa fa-spin fa-spinner\"],[12],[13],[1,\"\\n              \"],[1,[28,[35,8],[\"please_wait\"],null]],[1,\"\\n            \"],[13],[1,\"\\n\"]],[]]]],[]],null],[1,\"      \"],[13],[1,\"\\n    \"],[13],[1,\"\\n  \"],[13],[1,\"\\n\"],[13]],[\"&attrs\",\"@modalSize\",\"@hideHeader\",\"&default\",\"&delete-button\",\"&cancel-button\",\"&primary-button\"],false,[\"on\",\"if\",\"concat\",\"unless\",\"action\",\"yield\",\"has-block\",\"or\",\"t\"]]",
+    "id": "/NiN77HY",
+    "block": "[[[11,0],[17,1],[24,0,\"modal fade\"],[24,\"role\",\"dialog\"],[24,\"aria-modal\",\"true\"],[16,1,[30,0,[\"modalId\"]]],[24,\"data-keyboard\",\"false\"],[4,[38,0],[\"click\",[30,0,[\"considerCancelClick\"]]],null],[12],[1,\"\\n\"],[1,\"  \"],[10,0],[15,0,[29,[\"modal-dialog\\n      \",[52,[30,0,[\"largeModal\"]],\"modal-lg\"],\"\\n      \",[52,[30,2],[28,[37,2],[\"modal-\",[30,2]],null]]]]],[14,\"role\",\"document\"],[12],[1,\"\\n    \"],[10,0],[15,0,[29,[\"modal-content\\n        \",[52,[30,0,[\"shadow\"]],\"shadow\"],\"\\n        \",[52,[30,0,[\"isDanger\"]],\"danger-modal\"]]]],[12],[1,\"\\n\"],[41,[51,[30,3]],[[[1,\"        \"],[10,0],[14,0,\"modal-header\"],[12],[1,\"\\n          \"],[10,1],[15,0,[29,[\"modal-title \",[52,[30,0,[\"draggableModal\"]],\"hover-pointer\"]]]],[12],[1,\"\\n\"],[41,[30,0,[\"draggableModal\"]],[[[1,\"              \"],[10,1],[14,0,\"fe fe-move\"],[12],[13],[1,\"\\n\"]],[]],null],[1,\"            \"],[1,[30,0,[\"title\"]]],[1,\"\\n          \"],[13],[1,\"\\n          \"],[10,1],[14,0,\"svg-icon times\"],[12],[13],[1,\"\\n          \"],[11,\"button\"],[24,0,\"close\"],[24,\"data-dismiss\",\"modal\"],[24,\"aria-label\",\"Close\"],[16,\"disabled\",[30,0,[\"disableModalClose\"]]],[24,4,\"button\"],[4,[38,4],[[30,0],\"cancelClick\"],null],[12],[1,\"\\n            \"],[10,1],[14,\"aria-hidden\",\"true\"],[12],[1,\"\\n              ×\\n            \"],[13],[1,\"\\n          \"],[13],[1,\"\\n        \"],[13],[1,\"\\n\"]],[]],null],[1,\"      \"],[10,0],[14,0,\"modal-body\"],[12],[1,\"\\n\"],[41,[30,0,[\"visible\"]],[[[1,\"          \"],[18,4,null],[1,\"\\n\"]],[]],null],[1,\"      \"],[13],[1,\"\\n      \"],[10,0],[15,0,[29,[\"modal-footer \",[52,[30,0,[\"isDanger\"]],\"text-center\"]]]],[12],[1,\"\\n\"],[41,[48,[30,5]],[[[1,\"          \"],[18,5,null],[1,\"\\n\"]],[]],null],[41,[48,[30,6]],[[[1,\"          \"],[18,6,null],[1,\"\\n\"]],[]],[[[41,[51,[30,0,[\"noBackBtn\"]]],[[[1,\"            \"],[11,\"button\"],[24,0,\"btn btn-outline-secondary\"],[24,\"data-dismiss\",\"modal\"],[16,\"disabled\",[28,[37,7],[[30,0,[\"disableModalClose\"]],[30,0,[\"btnLoading\"]]],null]],[24,4,\"button\"],[4,[38,0],[\"click\",[28,[37,4],[[30,0],\"cancelClick\"],null]],null],[12],[1,\"\\n              \"],[1,[52,[30,0,[\"cancelTextOverride\"]],[30,0,[\"cancelTextOverride\"]],[28,[37,8],[\"back\"],null]]],[1,\"\\n            \"],[13],[1,\"\\n\"]],[]],null]],[]]],[41,[48,[30,7]],[[[1,\"          \"],[18,7,null],[1,\"\\n\"]],[]],[[[41,[30,0,[\"btnText\"]],[[[41,[51,[28,[37,7],[[30,0,[\"btnLoading\"]],[30,0,[\"imageUploadInProgress\"]]],null]],[[[1,\"              \"],[11,\"button\"],[16,0,[28,[37,2],[\"btn \",[30,0,[\"btn\"]]],null]],[24,4,\"button\"],[4,[38,4],[[30,0],\"btnClick\"],null],[12],[1,\"\\n                \"],[10,1],[15,0,[28,[37,2],[\"fa \",[30,0,[\"icon\"]]],null]],[12],[13],[1,\"\\n                \"],[1,[30,0,[\"btnText\"]]],[1,\"\\n              \"],[13],[1,\"\\n\"]],[]],[[[1,\"              \"],[10,\"button\"],[15,0,[28,[37,2],[\"btn \",[30,0,[\"btn\"]]],null]],[14,\"disabled\",\"disabled\"],[14,4,\"button\"],[12],[1,\"\\n                \"],[10,1],[14,0,\"fa fa-spin fa-spinner\"],[12],[13],[1,\"\\n                please_wait\\n              \"],[13],[1,\"\\n\"]],[]]]],[]],null]],[]]],[1,\"\\n\"],[41,[30,0,[\"btn2Text\"]],[[[41,[51,[28,[37,7],[[30,0,[\"btn2Loading\"]],[30,0,[\"imageUploadInProgress\"]]],null]],[[[1,\"            \"],[11,\"button\"],[16,0,[28,[37,2],[\"btn \",[30,0,[\"btn2\"]]],null]],[24,4,\"button\"],[4,[38,4],[[30,0],\"btn2Click\"],null],[12],[1,\"\\n              \"],[10,1],[15,0,[28,[37,2],[\"fa \",[30,0,[\"icon2\"]]],null]],[12],[13],[1,\"\\n              \"],[1,[30,0,[\"btn2Text\"]]],[1,\"\\n            \"],[13],[1,\"\\n\"]],[]],[[[1,\"            \"],[10,\"button\"],[15,0,[28,[37,2],[\"btn \",[30,0,[\"btn2\"]]],null]],[14,\"disabled\",\"disabled\"],[14,4,\"button\"],[12],[1,\"\\n              \"],[10,1],[14,0,\"fa fa-spin fa-spinner\"],[12],[13],[1,\"\\n              \\\"please_wait\\\"\\n            \"],[13],[1,\"\\n\"]],[]]]],[]],null],[1,\"      \"],[13],[1,\"\\n    \"],[13],[1,\"\\n  \"],[13],[1,\"\\n\"],[13]],[\"&attrs\",\"@modalSize\",\"@hideHeader\",\"&default\",\"&delete-button\",\"&cancel-button\",\"&primary-button\"],false,[\"on\",\"if\",\"concat\",\"unless\",\"action\",\"yield\",\"has-block\",\"or\",\"t\"]]",
     "moduleName": "untitled-folder/components/bs-modal.hbs",
     "isStrictMode": false
   });
@@ -363,7 +363,7 @@
   /*
     <BsModal
     @modalId="menulistModal"
-    @title={{t "menulist"}}
+    @title="menulist"
     @btn="btn-primary"
     @icon="fa-plus"
     @btnText={{if
@@ -377,29 +377,29 @@
   
     {{#unless (or (eq this.menulist.corporateId 0) this.auth.userTypeIsDirector)}}
       <div class="alert alert-info">
-        {{t "menulists.corporate.msg"}}
+        "menulists.corporate.msg"
       </div>
     {{/unless}}
   
     <FormFields>
-      <FormGroup @label={{t "menulists.name"}} @autoAddLabelClass={{true}}>
+      <FormGroup @label="menulists.name" @autoAddLabelClass={{true}}>
         <InputText @value={{this.menulist.name}} />
       </FormGroup>
   
-      <FormGroup @label={{t "description"}} @autoAddLabelClass={{true}}>
+      <FormGroup @label="description" @autoAddLabelClass={{true}}>
         <InputText @value={{this.menulist.description}} />
       </FormGroup>
   
-      <FormGroup @label={{t "costpcnt"}} @autoAddLabelClass={{true}}>
+      <FormGroup @label="costpcnt" @autoAddLabelClass={{true}}>
         <InputNumber @places={{2}} @value={{this.menulist.costPcnt}} />
       </FormGroup>
   
       {{#if this.auth.userTypeIsDirector}}
-        <FormGroup @label={{t "market"}} @autoAddLabelClass={{true}}>
+        <FormGroup @label="market" @autoAddLabelClass={{true}}>
           {{#if this.menulist.isNew}}
             <InputSelect @value={{this.menulist.marketId}}>
               <option selected={{eq this.menulist.marketId 0}} value="0">
-                {{t "markets.select"}}
+                "markets.select"
               </option>
               {{#each this.markets as |market|}}
                 <option
@@ -419,8 +419,8 @@
   </BsModal>
   */
   {
-    "id": "5jt1A+xD",
-    "block": "[[[8,[39,0],null,[[\"@modalId\",\"@title\",\"@btn\",\"@icon\",\"@btnText\",\"@btnClick\",\"@cancelClick\"],[\"menulistModal\",[28,[37,1],[\"menulist\"],null],\"btn-primary\",\"fa-plus\",[52,[28,[37,3],[[28,[37,4],[[30,0,[\"menulist\",\"corporateId\"]],0],null],[30,0,[\"auth\",\"userTypeIsDirector\"]]],null],[30,0,[\"btnText\"]]],\"saveMenulist\",\"cancelMenulist\"]],[[\"default\"],[[[[1,\"\\n  \"],[8,[39,5],null,[[\"@model\"],[[30,0,[\"menulist\"]]]],null],[1,\"\\n\\n\"],[41,[51,[28,[37,3],[[28,[37,4],[[30,0,[\"menulist\",\"corporateId\"]],0],null],[30,0,[\"auth\",\"userTypeIsDirector\"]]],null]],[[[1,\"    \"],[10,0],[14,0,\"alert alert-info\"],[12],[1,\"\\n      \"],[1,[28,[35,1],[\"menulists.corporate.msg\"],null]],[1,\"\\n    \"],[13],[1,\"\\n\"]],[]],null],[1,\"\\n  \"],[8,[39,7],null,null,[[\"default\"],[[[[1,\"\\n    \"],[8,[39,8],null,[[\"@label\",\"@autoAddLabelClass\"],[[28,[37,1],[\"menulists.name\"],null],true]],[[\"default\"],[[[[1,\"\\n      \"],[8,[39,9],null,[[\"@value\"],[[30,0,[\"menulist\",\"name\"]]]],null],[1,\"\\n    \"]],[]]]]],[1,\"\\n\\n    \"],[8,[39,8],null,[[\"@label\",\"@autoAddLabelClass\"],[[28,[37,1],[\"description\"],null],true]],[[\"default\"],[[[[1,\"\\n      \"],[8,[39,9],null,[[\"@value\"],[[30,0,[\"menulist\",\"description\"]]]],null],[1,\"\\n    \"]],[]]]]],[1,\"\\n\\n    \"],[8,[39,8],null,[[\"@label\",\"@autoAddLabelClass\"],[[28,[37,1],[\"costpcnt\"],null],true]],[[\"default\"],[[[[1,\"\\n      \"],[8,[39,10],null,[[\"@places\",\"@value\"],[2,[30,0,[\"menulist\",\"costPcnt\"]]]],null],[1,\"\\n    \"]],[]]]]],[1,\"\\n\\n\"],[41,[30,0,[\"auth\",\"userTypeIsDirector\"]],[[[1,\"      \"],[8,[39,8],null,[[\"@label\",\"@autoAddLabelClass\"],[[28,[37,1],[\"market\"],null],true]],[[\"default\"],[[[[1,\"\\n\"],[41,[30,0,[\"menulist\",\"isNew\"]],[[[1,\"          \"],[8,[39,11],null,[[\"@value\"],[[30,0,[\"menulist\",\"marketId\"]]]],[[\"default\"],[[[[1,\"\\n            \"],[10,\"option\"],[15,\"selected\",[28,[37,4],[[30,0,[\"menulist\",\"marketId\"]],0],null]],[14,2,\"0\"],[12],[1,\"\\n              \"],[1,[28,[35,1],[\"markets.select\"],null]],[1,\"\\n            \"],[13],[1,\"\\n\"],[42,[28,[37,13],[[28,[37,13],[[30,0,[\"markets\"]]],null]],null],null,[[[1,\"              \"],[10,\"option\"],[15,\"selected\",[28,[37,4],[[30,0,[\"menulist\",\"marketId\"]],[30,1,[\"id\"]]],null]],[15,2,[30,1,[\"id\"]]],[12],[1,\"\\n                \"],[1,[30,1,[\"marketName\"]]],[1,\"\\n              \"],[13],[1,\"\\n\"]],[1]],null],[1,\"          \"]],[]]]]],[1,\"\\n\"]],[]],[[[1,\"          \"],[1,[30,0,[\"menulist\",\"marketRecord\",\"marketName\"]]],[1,\"\\n\"]],[]]],[1,\"      \"]],[]]]]],[1,\"\\n\"]],[]],null],[1,\"  \"]],[]]]]],[1,\"\\n\"]],[]]]]]],[\"market\"],false,[\"bs-modal\",\"t\",\"if\",\"or\",\"eq\",\"error-display\",\"unless\",\"form-fields\",\"form-group\",\"input-text\",\"input-number\",\"input-select\",\"each\",\"-track-array\"]]",
+    "id": "N66W+RXj",
+    "block": "[[[8,[39,0],null,[[\"@modalId\",\"@title\",\"@btn\",\"@icon\",\"@btnText\",\"@btnClick\",\"@cancelClick\"],[\"menulistModal\",\"menulist\",\"btn-primary\",\"fa-plus\",[52,[28,[37,2],[[28,[37,3],[[30,0,[\"menulist\",\"corporateId\"]],0],null],[30,0,[\"auth\",\"userTypeIsDirector\"]]],null],[30,0,[\"btnText\"]]],\"saveMenulist\",\"cancelMenulist\"]],[[\"default\"],[[[[1,\"\\n  \"],[8,[39,4],null,[[\"@model\"],[[30,0,[\"menulist\"]]]],null],[1,\"\\n\\n\"],[41,[51,[28,[37,2],[[28,[37,3],[[30,0,[\"menulist\",\"corporateId\"]],0],null],[30,0,[\"auth\",\"userTypeIsDirector\"]]],null]],[[[1,\"    \"],[10,0],[14,0,\"alert alert-info\"],[12],[1,\"\\n      \\\"menulists.corporate.msg\\\"\\n    \"],[13],[1,\"\\n\"]],[]],null],[1,\"\\n  \"],[8,[39,6],null,null,[[\"default\"],[[[[1,\"\\n    \"],[8,[39,7],null,[[\"@label\",\"@autoAddLabelClass\"],[\"menulists.name\",true]],[[\"default\"],[[[[1,\"\\n      \"],[8,[39,8],null,[[\"@value\"],[[30,0,[\"menulist\",\"name\"]]]],null],[1,\"\\n    \"]],[]]]]],[1,\"\\n\\n    \"],[8,[39,7],null,[[\"@label\",\"@autoAddLabelClass\"],[\"description\",true]],[[\"default\"],[[[[1,\"\\n      \"],[8,[39,8],null,[[\"@value\"],[[30,0,[\"menulist\",\"description\"]]]],null],[1,\"\\n    \"]],[]]]]],[1,\"\\n\\n    \"],[8,[39,7],null,[[\"@label\",\"@autoAddLabelClass\"],[\"costpcnt\",true]],[[\"default\"],[[[[1,\"\\n      \"],[8,[39,9],null,[[\"@places\",\"@value\"],[2,[30,0,[\"menulist\",\"costPcnt\"]]]],null],[1,\"\\n    \"]],[]]]]],[1,\"\\n\\n\"],[41,[30,0,[\"auth\",\"userTypeIsDirector\"]],[[[1,\"      \"],[8,[39,7],null,[[\"@label\",\"@autoAddLabelClass\"],[\"market\",true]],[[\"default\"],[[[[1,\"\\n\"],[41,[30,0,[\"menulist\",\"isNew\"]],[[[1,\"          \"],[8,[39,10],null,[[\"@value\"],[[30,0,[\"menulist\",\"marketId\"]]]],[[\"default\"],[[[[1,\"\\n            \"],[10,\"option\"],[15,\"selected\",[28,[37,3],[[30,0,[\"menulist\",\"marketId\"]],0],null]],[14,2,\"0\"],[12],[1,\"\\n              \\\"markets.select\\\"\\n            \"],[13],[1,\"\\n\"],[42,[28,[37,12],[[28,[37,12],[[30,0,[\"markets\"]]],null]],null],null,[[[1,\"              \"],[10,\"option\"],[15,\"selected\",[28,[37,3],[[30,0,[\"menulist\",\"marketId\"]],[30,1,[\"id\"]]],null]],[15,2,[30,1,[\"id\"]]],[12],[1,\"\\n                \"],[1,[30,1,[\"marketName\"]]],[1,\"\\n              \"],[13],[1,\"\\n\"]],[1]],null],[1,\"          \"]],[]]]]],[1,\"\\n\"]],[]],[[[1,\"          \"],[1,[30,0,[\"menulist\",\"marketRecord\",\"marketName\"]]],[1,\"\\n\"]],[]]],[1,\"      \"]],[]]]]],[1,\"\\n\"]],[]],null],[1,\"  \"]],[]]]]],[1,\"\\n\"]],[]]]]]],[\"market\"],false,[\"bs-modal\",\"if\",\"or\",\"eq\",\"error-display\",\"unless\",\"form-fields\",\"form-group\",\"input-text\",\"input-number\",\"input-select\",\"each\",\"-track-array\"]]",
     "moduleName": "untitled-folder/components/menulist-modal.hbs",
     "isStrictMode": false
   });
@@ -1178,6 +1178,20 @@ define("untitled-folder/components/sortable-thead", ["exports", "@ember/componen
   });
   0; //eaimeta@70e063a35619d71f0,"@embroider/util"eaimeta@70e063a35619d71f
 });
+;define("untitled-folder/helpers/eq", ["exports", "@ember/component/helper"], function (_exports, _helper) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  0; //eaimeta@70e063a35619d71f0,"@ember/component/helper"eaimeta@70e063a35619d71f
+  var eq = function eq(params) {
+    return params[0] == params[1];
+  };
+  var _default = (0, _helper.helper)(eq);
+  _exports.default = _default;
+});
 ;define("untitled-folder/helpers/loc", ["exports", "@ember/string/helpers/loc"], function (_exports, _loc) {
   "use strict";
 
@@ -1197,6 +1211,28 @@ define("untitled-folder/components/sortable-thead", ["exports", "@ember/componen
     }
   });
   0; //eaimeta@70e063a35619d71f0,"@ember/string/helpers/loc"eaimeta@70e063a35619d71f
+});
+;define("untitled-folder/helpers/or", ["exports", "@ember/component/helper"], function (_exports, _helper) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  _exports.or = or;
+  0; //eaimeta@70e063a35619d71f0,"@ember/component/helper"eaimeta@70e063a35619d71f
+  function or(params) {
+    var param;
+    for (var i = 0; i < params.length; i++) {
+      param = params[i];
+      if (param) {
+        return param;
+      }
+    }
+    return param;
+  }
+  var _default = (0, _helper.helper)(or);
+  _exports.default = _default;
 });
 ;define("untitled-folder/helpers/page-title", ["exports", "ember-page-title/helpers/page-title"], function (_exports, _pageTitle) {
   "use strict";
@@ -2090,7 +2126,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("untitled-folder/app")["default"].create({"name":"untitled-folder","version":"0.0.0+3ab0479d"});
+            require("untitled-folder/app")["default"].create({"name":"untitled-folder","version":"0.0.0+47ee94e5"});
           }
         
 //# sourceMappingURL=untitled-folder.map

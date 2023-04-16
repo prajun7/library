@@ -1,6 +1,6 @@
 <BsModal
   @modalId="menulistModal"
-  @title={{t "menulist"}}
+  @title="menulist"
   @btn="btn-primary"
   @icon="fa-plus"
   @btnText={{if
@@ -14,29 +14,29 @@
 
   {{#unless (or (eq this.menulist.corporateId 0) this.auth.userTypeIsDirector)}}
     <div class="alert alert-info">
-      {{t "menulists.corporate.msg"}}
+      "menulists.corporate.msg"
     </div>
   {{/unless}}
 
   <FormFields>
-    <FormGroup @label={{t "menulists.name"}} @autoAddLabelClass={{true}}>
+    <FormGroup @label="menulists.name" @autoAddLabelClass={{true}}>
       <InputText @value={{this.menulist.name}} />
     </FormGroup>
 
-    <FormGroup @label={{t "description"}} @autoAddLabelClass={{true}}>
+    <FormGroup @label="description" @autoAddLabelClass={{true}}>
       <InputText @value={{this.menulist.description}} />
     </FormGroup>
 
-    <FormGroup @label={{t "costpcnt"}} @autoAddLabelClass={{true}}>
+    <FormGroup @label="costpcnt" @autoAddLabelClass={{true}}>
       <InputNumber @places={{2}} @value={{this.menulist.costPcnt}} />
     </FormGroup>
 
     {{#if this.auth.userTypeIsDirector}}
-      <FormGroup @label={{t "market"}} @autoAddLabelClass={{true}}>
+      <FormGroup @label="market" @autoAddLabelClass={{true}}>
         {{#if this.menulist.isNew}}
           <InputSelect @value={{this.menulist.marketId}}>
             <option selected={{eq this.menulist.marketId 0}} value="0">
-              {{t "markets.select"}}
+              "markets.select"
             </option>
             {{#each this.markets as |market|}}
               <option
