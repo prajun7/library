@@ -1,6 +1,12 @@
 
 {{!-- menulist-list.hbs --}}
 
+{{log this.model}}
+
+{{#each this.model as |book|}}
+  {{book.id}}
+{{/each}}
+
 {{#unless this.menulists.length}}
   <JumboMessage
     @title="menulists.none.found"
