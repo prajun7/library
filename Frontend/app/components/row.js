@@ -6,8 +6,23 @@ The code logic is in row.js file while the view part is in row.hbs file.
 
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
+
 
 export default class BookComponent extends Component {
+
+  @tracked deleteModal;
+
+  @action
+  showModal() {
+    this.deleteModal = true;
+  }
+
+  @action
+  hideModal() {
+    this.deleteModal = false;
+  }
+
   @action
   deleteBook() {
     fetch('http://localhost:9090/book/' + this.args.book.id, {

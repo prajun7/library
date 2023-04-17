@@ -8,6 +8,19 @@
         <LinkTo class="update-btn" @route="book" @model={{@book.id}} reload=true>Update</LinkTo>
     </td>
     <td>
-        <button class="delete-btn" {{on "click" this.deleteBook}}>Delete</button>
+        <button class="delete-btn" {{on "click" this.showModal}}>Delete</button>
     </td>
+    
+
+{{!-- <button {{on "click" this.showModal}}>Delete</button> --}}
+{{#if this.deleteModal}}
+  <DeleteModal
+    @title="Confirm Delete"
+    @message="Are you sure you want to delete this item?"
+    @onConfirm={{fn this.deleteBook}}
+    @onCancel={{fn this.hideModal}}
+  />
+{{/if}}
+
+
 </tr>
