@@ -10,9 +10,8 @@
     <td>
         <button class="delete-btn" {{on "click" this.showModal}}>Delete</button>
     </td>
-    
+</tr>
 
-{{!-- <button {{on "click" this.showModal}}>Delete</button> --}}
 {{#if this.deleteModal}}
   <ConfirmModal
     @title="Confirm Delete"
@@ -21,6 +20,3 @@
     @onCancel={{fn this.hideModal}}
   />
 {{/if}}
-
-
-</tr>
