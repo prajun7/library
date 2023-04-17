@@ -16,6 +16,7 @@ public class BookController {
     @Autowired
     private BookRepository bookRepository;
 
+    @CrossOrigin
     @GetMapping("/books")
     public ResponseEntity<List<Book>> getAllBooks() {
         try {
@@ -32,6 +33,7 @@ public class BookController {
         }
     }
 
+    @CrossOrigin
     @GetMapping("/book/{id}")
     public ResponseEntity<Book> getBookById(@PathVariable Long id) {
         Optional<Book> book = bookRepository.findById(id);
@@ -43,6 +45,7 @@ public class BookController {
         return new ResponseEntity<>(book.get(), HttpStatus.OK);
     }
 
+    @CrossOrigin
     @PostMapping("/book")
     public ResponseEntity<Book> addBook(@RequestBody Book book) {
         Book bookObj = bookRepository.save(book);
@@ -50,6 +53,7 @@ public class BookController {
         return new ResponseEntity<>(bookObj, HttpStatus.OK);
     }
 
+    @CrossOrigin
     @PostMapping("/book/{id}")
     public ResponseEntity<Book> updateBookById(@PathVariable Long id, @RequestBody Book newBook) {
         Optional<Book> oldBook = bookRepository.findById(id);
@@ -60,7 +64,7 @@ public class BookController {
 
         Book updatedBook = oldBook.get();
         updatedBook.setTitle(newBook.getTitle());
-        updatedBook.setAuthor(newBook.getTitle());
+        updatedBook.setAuthor(newBook.getAuthor());
         updatedBook.setGenre(newBook.getGenre());
         updatedBook.setCount(newBook.getCount());
 
@@ -68,6 +72,7 @@ public class BookController {
         return new ResponseEntity<>(bookObj, HttpStatus.OK);
     }
 
+    @CrossOrigin
     @DeleteMapping("/book/{id}")
     public ResponseEntity<HttpStatus> deleteBookById(@PathVariable Long id) {
         bookRepository.deleteById(id);
