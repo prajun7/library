@@ -16,9 +16,9 @@ module('Integration | Component | delete-modal', function (hooks) {
 
     // Template block usage:
     await render(hbs`
-      <DeleteModal>
+      <ConfirmModal>
         template block text
-      </DeleteModal>
+      </ConfirmModal>
     `);
 
     assert.dom(this.element).hasText('template block text');

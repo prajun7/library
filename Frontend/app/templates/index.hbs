@@ -7,7 +7,7 @@ Here in our app, the table and update, delete button are displayed from this pag
   <div class="top-btn">
     <LinkTo @route="book" @model={{'0'}} reload=true> Add Book </LinkTo>
   </div>
-  
+
 {{#if this.model.length}}
   <table>
     <tr>
@@ -23,10 +23,10 @@ Here in our app, the table and update, delete button are displayed from this pag
     {{/each}}
 </table>
 {{else}}
-  <p>
+  <div class="message">
     This app is using H2 database.<br>
     Start by adding some book.
-  </p>
+  </div>
 {{/if}}
 
 

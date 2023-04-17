@@ -44,7 +44,7 @@ define("bookstore/tests/helpers/index", ["exports", "ember-qunit"], function (_e
     // Additional setup for unit tests can be done here.
   }
 });
-define("bookstore/tests/integration/components/delete-modal-test", ["@ember/template-factory", "qunit", "bookstore/tests/helpers", "@ember/test-helpers"], function (_templateFactory, _qunit, _helpers, _testHelpers) {
+define("bookstore/tests/integration/components/confirm-modal-test", ["@ember/template-factory", "qunit", "bookstore/tests/helpers", "@ember/test-helpers"], function (_templateFactory, _qunit, _helpers, _testHelpers) {
   "use strict";
 
   0; //eaimeta@70e063a35619d71f0,"qunit",0,"bookstore/tests/helpers",0,"@ember/test-helpers",0,"ember-cli-htmlbars"eaimeta@70e063a35619d71f
@@ -59,9 +59,9 @@ define("bookstore/tests/integration/components/delete-modal-test", ["@ember/temp
         <DeleteModal />
       */
       {
-        "id": "0Fp+PFv/",
+        "id": "f85gdOQu",
         "block": "[[[8,[39,0],null,null,null]],[],false,[\"delete-modal\"]]",
-        "moduleName": "/Users/prajuntrital/Desktop/library/Frontend/bookstore/tests/integration/components/delete-modal-test.js",
+        "moduleName": "/Users/prajuntrital/Desktop/library/Frontend/bookstore/tests/integration/components/confirm-modal-test.js",
         "isStrictMode": false
       }));
       assert.dom(this.element).hasText('');
@@ -70,15 +70,15 @@ define("bookstore/tests/integration/components/delete-modal-test", ["@ember/temp
       await (0, _testHelpers.render)((0, _templateFactory.createTemplateFactory)(
       /*
         
-            <DeleteModal>
+            <ConfirmModal>
               template block text
-            </DeleteModal>
+            </ConfirmModal>
           
       */
       {
-        "id": "LTA+VA74",
-        "block": "[[[1,\"\\n      \"],[8,[39,0],null,null,[[\"default\"],[[[[1,\"\\n        template block text\\n      \"]],[]]]]],[1,\"\\n    \"]],[],false,[\"delete-modal\"]]",
-        "moduleName": "/Users/prajuntrital/Desktop/library/Frontend/bookstore/tests/integration/components/delete-modal-test.js",
+        "id": "nIODTHM7",
+        "block": "[[[1,\"\\n      \"],[8,[39,0],null,null,[[\"default\"],[[[[1,\"\\n        template block text\\n      \"]],[]]]]],[1,\"\\n    \"]],[],false,[\"confirm-modal\"]]",
+        "moduleName": "/Users/prajuntrital/Desktop/library/Frontend/bookstore/tests/integration/components/confirm-modal-test.js",
         "isStrictMode": false
       }));
       assert.dom(this.element).hasText('template block text');
