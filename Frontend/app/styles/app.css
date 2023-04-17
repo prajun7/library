@@ -1,22 +1,25 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 a {
    text-decoration: none;
 }
-.header{
+.header {
     color: rgb(49, 49, 185);;
     text-align: center;
     margin: 50px;
     margin-bottom: 30px;
 }
-.top-btn a, .update-btn, .delete-btn, .home-btn, .create-btn{
+
+.top-btn a, .update-btn, .delete-btn, .home-btn, .create-btn{ 
     color: white;
     background-color: rgb(25, 165, 25);
     padding: 8px;
     border-radius: 5px;
     box-shadow: black ;
 }
+
 .top-btn{
     margin: 30px 5px;
     text-align: center;
@@ -146,4 +149,17 @@ table {
       text-align: left;
     }
   }
+
+  td:nth-last-child(-n+2) {
+    border: none;
+    border: none;
+    background-color: white;
+  }
+
+  th:nth-last-child(-n+2) {
+    border: none;
+    border: none;
+    background-color: white;
+  }
+
   

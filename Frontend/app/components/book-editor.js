@@ -1,14 +1,19 @@
 import Component from '@glimmer/component';
+import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
 import Book from '../models/book';
 
 export default class BookComponent extends Component {
+  @service router;
+
   @action
   setBook() {
     if (this.args.model.id > 0) {
       this.updateBook();
+      this.router.transitionTo('index');
     } else {
       this.addBook();
+      this.router.transitionTo('index');
     }
   }
 
@@ -29,6 +34,7 @@ export default class BookComponent extends Component {
       .then((res) => res.json())
       .then((res) => {
         this.args.model.id = res.id;
+        this.clear();
         return new Book(res);
       })
       .catch((err) => console.log(err));
@@ -43,7 +49,6 @@ export default class BookComponent extends Component {
       genre: this.args.model.genre,
       count: this.args.model.count,
     };
-    console.log(bookObj);
     fetch('http://localhost:9090/book/' + paramId, {
       method: 'POST',
       body: JSON.stringify(bookObj),
@@ -51,15 +56,19 @@ export default class BookComponent extends Component {
         'Content-Type': 'application/json',
       },
     })
+    .then((res) => res.json())
+    .then((res) => {
+      this.args.model.id = res.id;
+      this.clear();
+      return new Book(res);
+    })
       .catch((err) => console.log(err));
   }
 
   clear() {
-    this.args.model.title = null;
-    this.args.model.isbn = null;
-    this.args.model.publishedDate = null;
-    this.args.model.authorList[0].firstName = null;
-    this.args.model.authorList[0].lastName = null;
-    this.args.model.authorList[0].doB = null;
+    this.args.model.title = '';
+    this.args.model.author = '';
+    this.args.model.genre = '';
+    this.args.model.count = 0;
   }
 }

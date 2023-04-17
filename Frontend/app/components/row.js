@@ -1,3 +1,9 @@
+/*
+The row.js is a component which is being called from index.hbs
+The component are reuseable by other template as well.
+The code logic is in row.js file while the view part is in row.hbs file.
+**/
+
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
 

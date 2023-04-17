@@ -4,10 +4,10 @@
     <td>{{@book.genre}}</td>
     <td>{{@book.count}}</td>
 
-    <td class="extra-columns">
+    <td>
         <LinkTo class="update-btn" @route="book" @model={{@book.id}} >Update</LinkTo>
     </td>
-    <td class="extra-columns">
+    <td>
         <button class="delete-btn" {{on "click" this.deleteBook}}>Delete</button>
     </td>
 </tr>
