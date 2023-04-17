@@ -5,7 +5,7 @@
     <td>{{@book.count}}</td>
 
     <td>
-        <LinkTo class="update-btn" @route="book" @model={{@book.id}} >Update</LinkTo>
+        <LinkTo class="update-btn" @route="book" @model={{@book.id}} reload=true>Update</LinkTo>
     </td>
     <td>
         <button class="delete-btn" {{on "click" this.deleteBook}}>Delete</button>
