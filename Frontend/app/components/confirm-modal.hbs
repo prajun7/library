@@ -12,7 +12,7 @@ Here we are calling this.comfirm and this.cancel. --}}
   <div class="my-modal">
     <h2>{{@title}}</h2>
     <p>{{@message}}</p>
-    <button class="create-btn " {{on "click" this.confirm}}>Confirm</button>
-    <button class="delete-btn" {{on "click" this.cancel}}>Cancel</button>
+    <button type="submit" {{on "click" this.confirm}}>Confirm</button>
+    <button type="cancel" {{on "click" this.cancel}}>Cancel</button>
   </div>
 </div>

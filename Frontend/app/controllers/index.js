@@ -17,14 +17,6 @@ export default class IndexComponent extends Controller{
 
   @action
   addBook(bookObj) {
-    // const bookObj = {
-    //   title: this.args.model.title,
-    //   author: this.args.model.author,
-    //   genre: this.args.model.genre,
-    //   count: this.args.model.count,
-    // };
-    console.log("addBook")
-    console.log(bookObj)
     fetch('http://localhost:9090/book', {
       method: 'POST',
       body: JSON.stringify(bookObj),
@@ -34,11 +26,10 @@ export default class IndexComponent extends Controller{
     })
       .then((res) => res.json())
       .then((res) => {
-        // this.args.model.id = res.id;
+        this.args.model.id = res.id;
         this.clear();
         return new Book(res);
       })
       .catch((err) => console.log(err));
-      // this.router.transitionTo('index');
   }
 }

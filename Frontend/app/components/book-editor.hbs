@@ -1,53 +1,37 @@
-{{!-- <div class="book-editor">
-        <h3>{{if (gt @model.id 0) 'Update' 'Add'}} a Book </h3>
-        <div class="top-input">
-                Title <Input @type="text" @value={{mut @model.title}} />
-                Author: <Input @type="text" @value={{@model.author}} />
-        </div>
-        <div class="bottom-input">
-                Genre <Input @type="text" @value={{@model.genre}} />
-                Count: <Input @type="text" @value={{@model.count}} />
-        </div>
-
-        <div style="margin-top: 30px">
-                <button class="create-btn" {{on "click" this.setBook}}>{{if (gt @model.id 0)'Update' 'Add'}} Book</button>
-        </div>
-</div> --}}
-
 <h1 class="sub-header">{{this.updateBookTitle}}</h1>
   <div class="form-container">
     <Input 
       @type="text"
-      @value={{this.title}}
+      @value={{mut @model.title}}
       @class="input-field" 
       @id="titleInput" 
       placeholder="Title"
     /> 
     <Input 
       @type="text" 
-      @value={{this.author}}  
+      @value={{mut @model.author}}  
       @class="input-field" 
       @id="authorInput" 
       placeholder="Author"
     />
     <Input 
       @type="text" 
-      @value={{this.genre}}  
+      @value={{mut @model.genre}}
       @class="input-field" 
       @id="genreInput" 
       placeholder="Genre"
     />
     <Input 
       @type="number" 
-      @value={{this.count}}  
+      @value={{mut @model.count}}  
       @id="countInput" 
       placeholder="Count"
     />
     <button 
       type="submit" 
-      {{on "click" this.save}}
+      {{on "click" this.updateBook}}
     >
-      Save
+      Update
     </button>
     <button 
       type="cancel" 

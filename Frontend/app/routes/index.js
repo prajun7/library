@@ -22,10 +22,13 @@ import Book from '../models/book';
 export default class extends Route {
   async model() {
     try {
+      console.log("here")
       const response = await fetch('http://localhost:9090/books');
       const data = await response.json();
       const dataMap = data.map((o) => new Book(o));
       const books = A(dataMap);
+      console.log("here2")
+      console.log(books);
       return books;
     } catch (err) {
       console.log(err);

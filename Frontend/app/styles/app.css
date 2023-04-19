@@ -7,17 +7,6 @@ a {
    text-decoration: none;
 }
 
-.message {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.5;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-}
-
 .spacer {
   line-height: 1.5;
   padding: 10px;
@@ -42,7 +31,18 @@ a {
   font-size: 20px;
 }
 
-.top-btn a, .update-btn, .delete-btn, .home-btn, .create-btn{ 
+.message {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.top-btn, .update-btn, .delete-btn{ 
     color: white;
     background-color: rgb(25, 165, 25);
     padding: 8px;
@@ -50,9 +50,10 @@ a {
     box-shadow: black ;
 }
 
-.top-btn{
-    margin: 30px 5px;
-    text-align: center;
+.top-btn {
+  margin: 30px auto; /* Change margin to 'auto' for horizontal centering */
+  text-align: center;
+  display: block; /* Change display to 'block' to take up full width */
 }
 
 .update-btn{
@@ -68,26 +69,8 @@ a {
     border: 1px solid rgb(25, 165, 25);
 }
 
-.home-btn{
-    background-color: rgba(134, 73, 255, 0.956);
-}
-
-.top-input{
-    margin: 10px;
-}
-
-.bottom-input{
-    margin: 10px;
-    display: inline;
-}
-
-h3{
+h3 {
     color: blue;
-}
-
-legend{
-    font-size: large;
-    font-weight: 500;
 }
 
 button:hover{
@@ -223,6 +206,17 @@ input {
   height: 50px; 
 }
 
+.input-field {
+  flex: 1;
+  padding: 5px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 button[type="submit"] {
   background-color: #007bff;
   color: #fff;
@@ -251,15 +245,3 @@ button[type="cancel"] {
 button[type="cancel"]:hover {
   background-color: #ff0000;
 }
-
-.input-field {
-  flex: 1;
-  padding: 5px;
-}
-
-.form-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
