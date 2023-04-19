@@ -36,9 +36,4 @@ export default class BookComponent extends Component {
       })
       .catch((err) => console.log(err));
   }
-  
-  @action
-  updateBook() {
-    console.log(this.args.book);
-  }
 }

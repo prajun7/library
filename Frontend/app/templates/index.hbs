@@ -4,9 +4,12 @@ We don't need to add any route in the router.js file to define this page.
 So this page is the home page or landing page.
 Here in our app, the table and update, delete button are displayed from this page. --}}
 
-  <div class="top-btn">
-    <LinkTo @route="book" @model={{'0'}} reload=true> Add Book </LinkTo>
-  </div>
+<div class="top-btn">
+  <LinkTo @route="book" @model={{'0'}} reload=true> Add Book </LinkTo>
+</div>
+<div class="top-btn">
+    <button {{on "click" this.showModal}}>Add Book</button>
+</div>
 
 {{#if this.model.length}}
   <table>
@@ -27,6 +30,15 @@ Here in our app, the table and update, delete button are displayed from this pag
     This app is using H2 database.<br>
     Start by adding some book.
   </div>
+{{/if}}
+
+{{#if this.deleteModal}}
+  <AddBookModal
+    @title="Add Book"
+    @message="Start adding your book here"
+    @onSave={{fn this.addBook}}
+    @onCancel={{fn this.hideModal}}
+  />
 {{/if}}
 
 {{!-- We are calling a component called Row, which renders each row of the book.

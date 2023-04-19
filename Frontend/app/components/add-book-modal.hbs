@@ -1,0 +1,57 @@
+{{!-- IN the template file, we can get those argument by using @title or @message --}}
+{{!-- We cannot call a function that is passed from one component to another directly 
+from the template. In Ember, we can only call functions that 
+are defined in the current component's JavaScript file from the template. --}}
+
+{{!-- If we need to call a function that is defined in a different component, 
+we should pass that function as an argument to the current 
+component and then call it from there.
+Here we are calling this.comfirm and this.cancel. --}}
+
+<div class="my-modal-overlay">
+  <div class="my-modal">
+        <h1 class="header">{{@title}}</h1>
+        <div class="message">{{@message}}</div>
+        <div class="form-container">
+          <Input 
+            @type="text"
+            @value={{this.title}}
+            @class="input-field" 
+            @id="titleInput" 
+            placeholder="Title"
+          /> 
+          <Input 
+            @type="text" 
+            @value={{this.author}}  
+            @class="input-field" 
+            @id="authorInput" 
+            placeholder="Author"
+          />
+          <Input 
+            @type="text" 
+            @value={{this.genre}}  
+            @class="input-field" 
+            @id="genreInput" 
+            placeholder="Genre"
+          />
+          <Input 
+            @type="number" 
+            @value={{this.count}}  
+            @id="countInput" 
+            placeholder="Count"
+          />
+          <button 
+            type="submit" 
+            {{on "click" this.save}}
+          >
+            Save
+          </button>
+          <button 
+            type="cancel" 
+            {{on "click" this.cancel}}
+          >
+            Cancel
+          </button>
+      </div>
+  </div>
+</div>

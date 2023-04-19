@@ -5,6 +5,7 @@ import Book from '../models/book';
 
 export default class BookComponent extends Component {
   @service router;
+  updateBookTitle = "Update Book";
 
   @action
   setBook() {
