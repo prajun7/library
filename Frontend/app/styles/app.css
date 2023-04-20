@@ -42,7 +42,7 @@ a {
   margin-bottom: 20px;
 }
 
-.top-btn, .update-btn, .delete-btn{ 
+.add-btn, .update-btn, .delete-btn{ 
     color: white;
     background-color: rgb(25, 165, 25);
     padding: 8px;
@@ -50,13 +50,13 @@ a {
     box-shadow: black ;
 }
 
-.top-btn {
+.add-btn {
   margin: 30px auto; /* Change margin to 'auto' for horizontal centering */
   text-align: center;
   display: block; /* Change display to 'block' to take up full width */
 }
 
-.update-btn{
+.update-btn {
     background-color: rgb(255, 200, 0) ;
 }
 
@@ -65,25 +65,21 @@ a {
     border: 1px solid rgb(202, 43, 43) ; 
 }
 
-.create-btn {
-    border: 1px solid rgb(25, 165, 25);
-}
-
-h3 {
+/* h3 {
     color: blue;
-}
+} */
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-html {
+/* html {
     height: 100%;
-}
+} */
 
-body{
+body {
     font-family: 'Lato', sans-serif;
-    color: #888;
+    color: #000000;
     margin: 0;
 }
 

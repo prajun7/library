@@ -4,9 +4,7 @@ We don't need to add any route in the router.js file to define this page.
 So this page is the home page or landing page.
 Here in our app, the table and update, delete button are displayed from this page. --}}
 
-{{!-- <div class="top-btn"> --}}
-    <button class="top-btn" {{on "click" this.showModal}}>Add Book</button>
-{{!-- </div> --}}
+<button class="add-btn" {{on "click" this.showModal}}>Add Book</button>
 
 {{#if this.model.length}}
   <table>
