@@ -3,16 +3,16 @@ import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
 export default class IndexComponent extends Controller{
-  @tracked deleteModal;
+  @tracked addModal;
 
   @action
   showModal() {
-    this.deleteModal = true;
+    this.addModal = true;
   }
 
   @action
   hideModal() {
-    this.deleteModal = false;
+    this.addModal = false;
   }
 
   @action
@@ -27,6 +27,7 @@ export default class IndexComponent extends Controller{
       .then((res) => res.json())
       .then((res) => {
         this.args.model.id = res.id;
+        console.log(this.args.model)
         this.clear();
         return new Book(res);
       })

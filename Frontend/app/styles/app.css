@@ -65,17 +65,9 @@ a {
     border: 1px solid rgb(202, 43, 43) ; 
 }
 
-/* h3 {
-    color: blue;
-} */
-
 button:hover {
     cursor: pointer;
 }
-
-/* html {
-    height: 100%;
-} */
 
 body {
     font-family: 'Lato', sans-serif;
@@ -188,13 +180,9 @@ form {
   text-align: center;
 }
 
-label,
 input {
   display: block;
   margin-bottom: 10px;
-}
-
-input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -205,12 +193,6 @@ input {
 .input-field {
   flex: 1;
   padding: 5px;
-}
-
-.form-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
 }
 
 button[type="submit"] {
