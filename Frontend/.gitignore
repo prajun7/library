@@ -6,7 +6,7 @@
 
 # dependencies
 /bower_components/
-/node_modules/
+node_modules/
 
 # misc
 /.env*
@@ -31,4 +31,3 @@
 # broccoli-debug
 /DEBUG/
 .DS_Store
-../.DS_Store

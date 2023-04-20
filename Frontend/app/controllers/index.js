@@ -1,6 +1,7 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
+import Book from '../models/book';
 
 export default class IndexComponent extends Controller{
   @tracked addModal;
@@ -26,9 +27,8 @@ export default class IndexComponent extends Controller{
     })
       .then((res) => res.json())
       .then((res) => {
-        this.args.model.id = res.id;
-        console.log(this.args.model)
-        this.clear();
+        const newBook = new Book(res);
+        this.model.pushObject(newBook); // Push the new book to this.model array
         return new Book(res);
       })
       .catch((err) => console.log(err));

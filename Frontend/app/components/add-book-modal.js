@@ -24,7 +24,8 @@ export default class MyModalComponent extends Component {
       genre: this.genre,
       count: this.count,
     };
-    // console.log(this.args.message);  // logs the message
+    // console.log(this.args.message);  
+    // logs the message that is passed from parent component
     this.args.onSave(bookObj);
     this.args.onCancel();
   }

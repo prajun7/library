@@ -18,15 +18,23 @@ That is the name of the file for route, template and controller should match.
 import Route from '@ember/routing/route';
 import { A } from '@ember/array';
 import Book from '../models/book';
+import { tracked } from '@glimmer/tracking';
 
 export default class extends Route {
+  // @tracked
+  // books = A();
+
   async model() {
     try {
       const response = await fetch('http://localhost:9090/books');
-      const data = await response.json();
-      const dataMap = data.map((o) => new Book(o));
-      const books = A(dataMap);
-      return books;
+      if (response.ok) {
+        const data = await response.json();
+        const dataMap = data.map((o) => new Book(o));
+        const books = A(dataMap);
+        return books;
+      } else {
+        throw new Error('Error fetching books: ' + response.statusText);
+      }
     } catch (err) {
       console.log(err);
     }
