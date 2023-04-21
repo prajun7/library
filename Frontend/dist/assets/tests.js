@@ -59,9 +59,9 @@ define("bookstore/tests/integration/components/confirm-modal-test", ["@ember/tem
         <DeleteModal />
       */
       {
-        "id": "f85gdOQu",
+        "id": "mLID7EsH",
         "block": "[[[8,[39,0],null,null,null]],[],false,[\"delete-modal\"]]",
-        "moduleName": "/Users/prajuntrital/Desktop/library/Frontend/bookstore/tests/integration/components/confirm-modal-test.js",
+        "moduleName": "/Users/prajuntrital/Desktop/library/library/Frontend/bookstore/tests/integration/components/confirm-modal-test.js",
         "isStrictMode": false
       }));
       assert.dom(this.element).hasText('');
@@ -76,9 +76,9 @@ define("bookstore/tests/integration/components/confirm-modal-test", ["@ember/tem
           
       */
       {
-        "id": "nIODTHM7",
+        "id": "tjAySm03",
         "block": "[[[1,\"\\n      \"],[8,[39,0],null,null,[[\"default\"],[[[[1,\"\\n        template block text\\n      \"]],[]]]]],[1,\"\\n    \"]],[],false,[\"confirm-modal\"]]",
-        "moduleName": "/Users/prajuntrital/Desktop/library/Frontend/bookstore/tests/integration/components/confirm-modal-test.js",
+        "moduleName": "/Users/prajuntrital/Desktop/library/library/Frontend/bookstore/tests/integration/components/confirm-modal-test.js",
         "isStrictMode": false
       }));
       assert.dom(this.element).hasText('template block text');

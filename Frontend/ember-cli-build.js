@@ -7,6 +7,19 @@ module.exports = function (defaults) {
     // Add options here
   });
 
+    // Configure outputPaths
+  app.options.outputPaths = {
+    app: {
+      html: 'index.html',
+      css: '/assets/app.css',
+      js: '/assets/app.js'
+    },
+    vendor: {
+      css: '/assets/vendor.css',
+      js: '/assets/vendor.js'
+    }
+  };
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
