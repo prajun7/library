@@ -24,7 +24,7 @@ public class BookController {
             bookRepository.findAll().forEach(books::add);
 
             if (books.isEmpty()) {
-                return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+                return new ResponseEntity<>(books, HttpStatus.OK);
             }
 
             return new ResponseEntity<>(books, HttpStatus.OK);
