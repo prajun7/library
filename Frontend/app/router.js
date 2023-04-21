@@ -1,3 +1,7 @@
+/**
+ * This file stores all the route.
+ */
+
 import EmberRouter from '@ember/routing/router';
 import config from 'bookstore/config/environment';
 

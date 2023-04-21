@@ -8,9 +8,7 @@ import Component from '@glimmer/component';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
-
 export default class BookComponent extends Component {
-
   @tracked deleteModal;
 
   @action
@@ -31,9 +29,9 @@ export default class BookComponent extends Component {
         'Content-Type': 'application/json',
       },
     })
-      .then((res) => {
-        this.args.model.removeObject(this.args.book);
-      })
-      .catch((err) => console.log(err));
+    .then(() => {
+      this.args.model.removeObject(this.args.book);
+    })
+    .catch((err) => console.log(err));
   }
 }

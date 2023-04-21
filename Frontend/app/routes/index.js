@@ -21,8 +21,8 @@ import Book from '../models/book';
 import { tracked } from '@glimmer/tracking';
 
 export default class extends Route {
-  // @tracked
-  // books = A();
+  @tracked
+  books = A();
 
   async model() {
     try {
@@ -30,8 +30,9 @@ export default class extends Route {
       if (response.ok) {
         const data = await response.json();
         const dataMap = data.map((o) => new Book(o));
-        const books = A(dataMap);
-        return books;
+        this.books = A(dataMap);
+        return { books: this.books }; 
+        // Return the array as a value in an object
       } else {
         throw new Error('Error fetching books: ' + response.statusText);
       }
@@ -40,3 +41,11 @@ export default class extends Route {
     }
   }
 }
+
+/**
+ * From the model we are returning the array of objects by doing, return { books: this.books }; 
+ * We want to track the books array, so that we can add the new book to that array.
+ * This will prevent us from refershing the page every time we add the new book.
+ * If we don't push the new book into the addBook() function in index.js controller file
+ * we have to refresh the page to see the newly added book.
+ */

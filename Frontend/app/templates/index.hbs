@@ -4,9 +4,13 @@ We don't need to add any route in the router.js file to define this page.
 So this page is the home page or landing page.
 Here in our app, the table and update, delete button are displayed from this page. --}}
 
+{{!-- Here we need to use this.model.books instead of just this.model because in 
+index.js router file we are returning object inside the model.
+The model can return the object of different data that we get from database.--}}
+
 <button class="add-btn" {{on "click" this.showModal}}>Add Book</button>
 
-{{#if this.model.length}}
+{{#if this.model.books.length}}
   <table>
     <tr>
         <th>Title</th>
@@ -16,8 +20,11 @@ Here in our app, the table and update, delete button are displayed from this pag
         <th></th>
         <th></th>
     </tr>
-    {{#each this.model as |book|}}
-      <Row @book={{book}} @model={{this.model}} />
+
+    {{!-- Here we are calling the Row component which takes the current book
+     and list of all the books --}}
+    {{#each this.model.books as |book|}}
+      <Row @book={{book}} @model={{this.model.books}} />
     {{/each}}
 </table>
 {{else}}

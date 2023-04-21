@@ -1,3 +1,12 @@
+/**
+ * We can use the helper in the template.hbs files.
+ * we can create helper like equal which check if two params are equal or not.
+ * We can use this equal helper by doing,
+ * {{#if (eq this.book.id 4)}}
+ *      Do something
+ * {{/if}}
+ */
+
 import { helper } from '@ember/component/helper';
 const monthMap = new Map([
   ["01", "January"],
