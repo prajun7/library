@@ -4,8 +4,8 @@ module.exports = function (environment) {
   const ENV = {
     modulePrefix: 'bookstore',
     environment,
-    rootURL: '/',
-    locationType: 'history',
+    rootURL: '/library/',
+    locationType: 'hash',
     EmberENV: {
       EXTEND_PROTOTYPES: false,
       FEATURES: {
