@@ -1,6 +1,8 @@
 # library
 App to keep track of Books in the library.<br>
-Built by using Spring Boot and Ember.js
+Built by using Spring Boot and Ember.js<br>
+Check here:<br>
+https://prajun7.github.io/library/
 
 ### To Start
 - Clone the project
@@ -67,4 +69,14 @@ module.exports = function(environment) {
 > Copy the contents of the dist folder like, assets folder, index.html to the `gh-pages-frontend` branch.<br>
 > The assest, index.html and robots.txt should be the root file of that branch, that is they should not be inside any folder.<br>
 
-### Backend - 
+### Backend - Using Heroku
+We need to add system.properties file in the backend and need to specifiy the java version we are using.
+That is,
+```
+java.runtime.version=17
+```
+Check pom.xml file to see which Java versin you are using.
+
+> Check the heroku-backend branch<br>
+> Only this branch is deployed for backend.
+
