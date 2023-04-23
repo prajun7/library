@@ -23,7 +23,7 @@ export default class BookComponent extends Component {
 
   @action
   deleteBook() {
-    fetch('http://localhost:9090/book/' + this.args.book.id, {
+    fetch('https://library-spring-boot.herokuapp.com/book/' + this.args.book.id, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

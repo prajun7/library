@@ -18,7 +18,7 @@ export default class BookComponent extends Component {
       genre: this.args.model.genre,
       count: this.args.model.count,
     };
-    fetch('http://localhost:9090/book/' + paramId, {
+    fetch('https://library-spring-boot.herokuapp.com/book/' + paramId, {
       method: 'POST',
       body: JSON.stringify(bookObj),
       headers: {

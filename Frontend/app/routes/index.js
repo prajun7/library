@@ -26,7 +26,7 @@ export default class extends Route {
 
   async model() {
     try {
-      const response = await fetch('http://localhost:9090/books');
+      const response = await fetch('https://library-spring-boot.herokuapp.com/books');
       if (response.ok) {
         const data = await response.json();
         const dataMap = data.map((o) => new Book(o));

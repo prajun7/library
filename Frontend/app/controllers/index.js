@@ -18,7 +18,7 @@ export default class IndexComponent extends Controller{
 
   @action
   addBook(bookObj) {
-    fetch('http://localhost:9090/book', {
+    fetch('https://library-spring-boot.herokuapp.com/book', {
       method: 'POST',
       body: JSON.stringify(bookObj),
       headers: {

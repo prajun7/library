@@ -18,7 +18,7 @@ export default class BookRoute extends Route {
   async model(params) {
     if (params.book_id > 0) {
       const response = await fetch(
-        'http://localhost:9090/book/' + params.book_id
+        'https://library-spring-boot.herokuapp.com/book/' + params.book_id
       );
       const data = await response.json();
       const book = new Book(data);
@@ -27,3 +27,8 @@ export default class BookRoute extends Route {
     return new Book();
   }
 }
+
+/**
+ * Backend was deployed to Heroku app, so replacing
+ * http://localhost:9090/book/ with https://library-spring-boot.herokuapp.com/book/
+ */
