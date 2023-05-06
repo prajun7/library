@@ -80,3 +80,25 @@ Check pom.xml file to see which Java versin you are using.
 > Check the heroku-backend branch<br>
 > Only this branch is deployed for backend.
 
+---
+
+### Ember 101
+- index.js in routes folder
+- index.js in controller folder
+- index.hbs in template folder
+
+All of these files are connected.
+The name of the files should be same.
+
+In index.js in route folder: It acts like useEffect with empty array. 
+In this file we put the API call to the backend inside the model.
+And we return the data from the model.
+The route file is the singleton, that is, it only have one instance and only runs once when we go to that URL.
+
+After this in, index.hbs file we can get that data by doing,
+this.model
+
+If we want to have more methods in index.hbs method we will define with action or method into the index.js in controller folder.
+
+When we call a component and pass the function or variable inside the component we can get that in the component by using, this.args.
+
